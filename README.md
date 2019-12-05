@@ -1,6 +1,6 @@
 # VL.ColorBlender
 
-VL implementation of the [https://github.com/wieslawsoltes/ColorBlender](ColorBlender) for VVVV Gamma
+VL implementation of the [ColorBlender](https://github.com/wieslawsoltes/ColorBlender) for VVVV Gamma
 
 ![splash](https://raw.githubusercontent.com/superbien/VL.ColorBlender/master/source/splash.PNG "splash")
 
