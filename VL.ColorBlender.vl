@@ -1,0 +1,2396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="J5JyJn3NcOOMVpuvr7jmNP" LanguageVersion="2019.2.0-0007-1964dfe42f" Version="0.128">
+  <NugetDependency Id="Jl3lvLyUlBVPSzHCDwsiE3" Location="VL.CoreLib" Version="2019.2.0-7" />
+  <Patch Id="EZoo6iBS3sHM8BHgfBQIlp">
+    <Canvas Id="FEdxaJ4QQdnO8dUUTfL4WK" DefaultCategory="Color.ColorBlender" CanvasType="FullCategory">
+      <Canvas Id="F3rohnFtRj7MWlVFpUEUY7" Name="Algorithms" Position="458,453">
+        <!--
+
+    ************************ Analogue ************************
+
+-->
+        <Node Name="Analogue" Bounds="306,459" Id="PiSXObBsLgFPsdaEUvI4Xq">
+          <p:NodeReference>
+            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="ColorBlender.Algorithms" LastSymbolSource="ColorBlender.dll">
+            <Choice Kind="TypeFlag" Name="Analogue" />
+          </p:TypeAnnotation>
+          <Patch Id="C2lGu7v70qbPCCn5hkM5GX">
+            <Canvas Id="PmQkkZPH7LWPcg7dbt4t90" CanvasType="Group">
+              <!--
+
+    ************************ CreateDefault (Internal) ************************
+
+-->
+              <Node Name="CreateDefault (Internal)" Bounds="562,375,74,88" Id="Gjx6iMHzMmKQTIO5K2x1P3">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="S3gLn4OZLoOMRefzhl4vK4">
+                  <Node Bounds="574,398,50,26" AutoConnect="true" Id="OoOnd5rWWWBNeMUppOyCNI">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Algorithms.Analogue" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.Algorithms.Analogue" />
+                    </p:NodeReference>
+                    <Pin Id="UiwgY9EZsTiOtiT80lddbh" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <ControlPoint Id="PPrIhSBoiQMLYUoZCF7wlz" Bounds="576,446" />
+                  <Link Id="N2GPutRMkfhOlMy0SHcUyn" Ids="UiwgY9EZsTiOtiT80lddbh,PPrIhSBoiQMLYUoZCF7wlz" />
+                  <Pin Id="KHBEIFcuXJSQQcavwPnOy8" Name="Output" Kind="OutputPin" Bounds="583,454" />
+                  <Link Id="AZHJ8mjlQZwQaxwDUuOQNZ" Ids="PPrIhSBoiQMLYUoZCF7wlz,KHBEIFcuXJSQQcavwPnOy8" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Match ************************
+
+-->
+              <Node Name="Match" Bounds="560,501,135,164" Id="B0ovcbD9VCOQHEWbdwGLjV">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="K0MXlKqiMAIMoRCWY0tzx0">
+                  <Node Bounds="574,560,10,10" AutoConnect="true" Id="M7QSY35O1l5N5TXdurJqYo">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Algorithms.Analogue" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Match" />
+                      <FullNameCategoryReference ID="ColorBlender.Algorithms.Analogue" />
+                    </p:NodeReference>
+                    <Pin Id="DDc1iGKGKWVO2F6u6TpMH6" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="HO1hWOMO5cHLuWyg4WkMpE" Name="Hsv" Kind="InputPin" />
+                    <Pin Id="JlxhKsLWCsdNM5irWH1duv" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Pad Id="D8GYAmP2pyJN1EF1HyEF6w" Comment="" Bounds="576,544,20,15" ShowValueBox="true" isIOBox="true">
+                    <p:TypeAnnotation LastCategoryFullName="RGBA.ColorBlender.Algorithms" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="TypeFlag" Name="Analogue" />
+                    </p:TypeAnnotation>
+                  </Pad>
+                  <Link Id="TlSWH9HbIFyL959a48Q2bx" Ids="D8GYAmP2pyJN1EF1HyEF6w,DDc1iGKGKWVO2F6u6TpMH6" />
+                  <Node Bounds="619,532,64,19" Id="PNT7omlsTeBK9qkZRgXCCN">
+                    <p:NodeReference LastCategoryFullName="Color.ColorBlender.HSV" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="FromRGBA" />
+                    </p:NodeReference>
+                    <Pin Id="EPauZkbZttLNRidbnjlLnR" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="H2m36s3aqrZOjS2S5wWHAL" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Link Id="Frs60LmqlMVP30TRMWdXXN" Ids="H2m36s3aqrZOjS2S5wWHAL,HO1hWOMO5cHLuWyg4WkMpE" />
+                  <ControlPoint Id="I1dTU5rybaNMpe1y81LOxt" Bounds="621,519" />
+                  <Link Id="T76WbZfCbeWLSprdiPZ8rp" Ids="I1dTU5rybaNMpe1y81LOxt,EPauZkbZttLNRidbnjlLnR" />
+                  <Pin Id="RZD1DW5BTMHMHoobsNnB9W" Name="Input" Kind="InputPin" Bounds="631,520" />
+                  <Link Id="L4jvutWQ56WLCoGUeKD2hY" Ids="RZD1DW5BTMHMHoobsNnB9W,I1dTU5rybaNMpe1y81LOxt" IsHidden="true" />
+                  <Node Bounds="574,603,46,26" Id="JZTihSxWSTKLQfDsaozwUz">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.Blend" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Colors" />
+                      <CategoryReference Kind="ClassType" Name="Blend" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="KSwi35AgLrRLxCn0xK4MG0" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="QLhBNj0Zm05LxwS2pLSDa1" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="FlTNBVslLrALU6vCtSpN4C" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="TMS5bPP76tDPQcKd8uMvIc" Ids="JlxhKsLWCsdNM5irWH1duv,KSwi35AgLrRLxCn0xK4MG0" />
+                  <ControlPoint Id="VCt10rkd5YVNthjJmULXm3" Bounds="617,648" />
+                  <Link Id="SeWo36zn1UnNwI1XyQogdA" Ids="FlTNBVslLrALU6vCtSpN4C,VCt10rkd5YVNthjJmULXm3" />
+                  <Pin Id="LMCQ1BWZk90QbyV1glLQoc" Name="Result" Kind="OutputPin" Bounds="615,648" />
+                  <Link Id="G6PcgQDRzwvNMCSKCa9o8u" Ids="VCt10rkd5YVNthjJmULXm3,LMCQ1BWZk90QbyV1glLQoc" IsHidden="true" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="MRwn0JwepdwQcYN6AEKGyZ" IsHidden="true">
+              <Fragment Id="KVIN0NCuq59Ob0ZkX3h5Z7" Patch="Gjx6iMHzMmKQTIO5K2x1P3" Enabled="true" />
+              <Fragment Id="SJJtQ6DlE9iP9MhnydWZnq" Patch="B0ovcbD9VCOQHEWbdwGLjV" />
+            </ProcessDefinition>
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Classic ************************
+
+-->
+        <Node Name="Classic" Bounds="586,459" Id="Px4K6vrnMEMLm3scOVYOAx">
+          <p:NodeReference>
+            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="ColorBlender.Algorithms" LastSymbolSource="ColorBlender.dll">
+            <Choice Kind="TypeFlag" Name="Classic" />
+          </p:TypeAnnotation>
+          <Patch Id="DiFY6wI4mKCNviqy08tSIc">
+            <Canvas Id="JZcfDCot27TMeLL8FsB8Zp" CanvasType="Group">
+              <!--
+
+    ************************ CreateDefault (Internal) ************************
+
+-->
+              <Node Name="CreateDefault (Internal)" Bounds="521,319,70,87" Id="KyEvcgbO4K3PN4LJEjscmE">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="SlVqGkRFT2AMmy581UsPdw">
+                  <Node Bounds="533,342,10,10" AutoConnect="true" Id="GGsLp0uxWy0LQ4OKAu2ZOx">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Algorithms.Classic" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.Algorithms.Classic" />
+                    </p:NodeReference>
+                    <Pin Id="GZUyW0244T1OkyDSSOR4ik" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <ControlPoint Id="JAEo9QXKxlnMfQS3nABaFP" Bounds="535,389" />
+                  <Link Id="G33pYhFBycPOhuYH8XLMFa" Ids="GZUyW0244T1OkyDSSOR4ik,JAEo9QXKxlnMfQS3nABaFP" />
+                  <Pin Id="SBhJf2I0GP0Oc7mdSz98n3" Name="Output" Kind="OutputPin" Bounds="542,389" />
+                  <Link Id="KoLQwn4MRHVMAHtKwGAdqS" Ids="JAEo9QXKxlnMfQS3nABaFP,SBhJf2I0GP0Oc7mdSz98n3" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Match ************************
+
+-->
+              <Node Name="Match" Bounds="503,491,145,156" Id="IpbioDJxFGTPRJj3jM6O9I">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="TipwxjLijuYO2Qiir1tjlX">
+                  <Node Bounds="533,552,44,26" AutoConnect="true" Id="QO9Cls5cWGNP2yyWeeQmVE">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Algorithms.Classic" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Match" />
+                      <FullNameCategoryReference ID="ColorBlender.Algorithms.Classic" />
+                    </p:NodeReference>
+                    <Pin Id="HW2ihmlUW8zOiNIUM7Kxgj" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="AcfR4WGnB3MODqqrPgd1gL" Name="Hsv" Kind="InputPin" />
+                    <Pin Id="PJ10rwl3zApMEDzulYxntZ" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Pin Id="D4WDzOD1xjALpGIqUEwfAq" Name="Input" Kind="InputPin" />
+                  <Node Bounds="572,523,64,19" Id="Jqs2WIWFZZXPkZtDSpoF8O">
+                    <p:NodeReference LastCategoryFullName="Color.ColorBlender.HSV" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="FromRGBA" />
+                    </p:NodeReference>
+                    <Pin Id="US97Tz1m3OIPWJnR99LSda" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="VwzptkC5cyhPgI0QmmM0c5" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Link Id="JfNMGLNs0tJQPanzOxOhGd" Ids="VwzptkC5cyhPgI0QmmM0c5,AcfR4WGnB3MODqqrPgd1gL" />
+                  <ControlPoint Id="AfMih5FeaegOUkGTxmPqsO" Bounds="574,509" />
+                  <Link Id="DcR297Lt8RSQREmok1kwiD" Ids="AfMih5FeaegOUkGTxmPqsO,US97Tz1m3OIPWJnR99LSda" />
+                  <Link Id="J99jHd7ce7bLOUpI5bjCOx" Ids="D4WDzOD1xjALpGIqUEwfAq,AfMih5FeaegOUkGTxmPqsO" IsHidden="true" />
+                  <Pad Id="Lp13Fx56QfeLdH8SSVsFBO" Comment="" Bounds="519,532,20,15" ShowValueBox="true" isIOBox="true">
+                    <p:TypeAnnotation LastCategoryFullName="RGBA.ColorBlender.Algorithms" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="TypeFlag" Name="Classic" />
+                    </p:TypeAnnotation>
+                  </Pad>
+                  <Link Id="OyBJSMKHOhmQcLYYyjIDc5" Ids="Lp13Fx56QfeLdH8SSVsFBO,HW2ihmlUW8zOiNIUM7Kxgj" />
+                  <Node Bounds="533,589,46,26" Id="G3k83UQrEeJPUvDmICUjMS">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.Blend" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="ClassType" Name="Blend" />
+                      <Choice Kind="OperationCallFlag" Name="Colors" />
+                    </p:NodeReference>
+                    <Pin Id="SHlePok5Zj1P0bnzU3BIgd" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="VYbul775L3HOUSKwijJnuz" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="Ov8FOa1DOt2PBnIw0u6CVG" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="JEF78M4ZCnPNiXJKct3y9o" Ids="PJ10rwl3zApMEDzulYxntZ,SHlePok5Zj1P0bnzU3BIgd" />
+                  <ControlPoint Id="MdglBsBYYBXQDTqKE8c5vd" Bounds="576,630" />
+                  <Link Id="RCuZjU0Q5tDNi95rlNBUcU" Ids="Ov8FOa1DOt2PBnIw0u6CVG,MdglBsBYYBXQDTqKE8c5vd" />
+                  <Pin Id="RytskrYW5D0Mh22JsLxvZR" Name="Result" Kind="OutputPin" Bounds="615,630" />
+                  <Link Id="Hpk7Owk7kuvOZvauylllEB" Ids="MdglBsBYYBXQDTqKE8c5vd,RytskrYW5D0Mh22JsLxvZR" IsHidden="true" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="VpjpWRuX1OFPYo3YpH8Pp5" IsHidden="true">
+              <Fragment Id="Ek3XPkXruf9NRDu8owirGA" Patch="KyEvcgbO4K3PN4LJEjscmE" Enabled="true" />
+              <Fragment Id="KTPYGVXznxaO5DuWfF8Vdz" Patch="IpbioDJxFGTPRJj3jM6O9I" />
+            </ProcessDefinition>
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ ColorExplorer ************************
+
+-->
+        <Node Name="ColorExplorer" Bounds="306,509" Id="EUuiMzJ6qiDPoOcVjcpSWL">
+          <p:NodeReference>
+            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="ColorBlender.Algorithms" LastSymbolSource="ColorBlender.dll">
+            <Choice Kind="TypeFlag" Name="ColorExplorer" />
+          </p:TypeAnnotation>
+          <Patch Id="Gti7ObUmpk6PzEC6D1iPzn">
+            <Canvas Id="OcpipbnYSrJOwQRw3OYDha" CanvasType="Group">
+              <!--
+
+    ************************ CreateDefault (Internal) ************************
+
+-->
+              <Node Name="CreateDefault (Internal)" Bounds="514,366,90,93" Id="Qo9Lvp2FbvgQD0oU4CLzBX">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="GFP0MdTnoBNLjfxz2LU1Zn">
+                  <Node Bounds="526,389,10,10" AutoConnect="true" Id="IN75QnewNlXO7DSWsYyRj1">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Algorithms.ColorExplorer" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.Algorithms.ColorExplorer" />
+                    </p:NodeReference>
+                    <Pin Id="TAo5ZSyXVdLO51wJ0MZWei" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <ControlPoint Id="HBq4bTSwBBJLmA1Q0Lt1Sj" Bounds="528,442" />
+                  <Link Id="R9VHMUIBbWPLqJv4wmlO0W" Ids="TAo5ZSyXVdLO51wJ0MZWei,HBq4bTSwBBJLmA1Q0Lt1Sj" />
+                  <Pin Id="EqEeoKoxWmKMdwQ0z0VyvA" Name="Output" Kind="OutputPin" Bounds="528,427" />
+                  <Link Id="HZx64iol4NoNhMnAhyLHsE" Ids="HBq4bTSwBBJLmA1Q0Lt1Sj,EqEeoKoxWmKMdwQ0z0VyvA" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Match ************************
+
+-->
+              <Node Name="Match" Bounds="512,552,151,168" Id="AbAj8Z4BfxSP1suRjtd3Aa">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="MKilKrsseDaMca0tAP5P0B">
+                  <Node Bounds="526,614,66,26" AutoConnect="true" Id="BGYl9nEX41nMdZU1JCQbsH">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Algorithms.ColorExplorer" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Match" />
+                      <FullNameCategoryReference ID="ColorBlender.Algorithms.ColorExplorer" />
+                    </p:NodeReference>
+                    <Pin Id="QYSLP5mmEH3L0f5Iqa2FhH" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="BcU6cX6sWvxNj2ZlFaldfv" Name="Hsv" Kind="InputPin" />
+                    <Pin Id="Dds2oyJoQMWNPGfJk7YnA9" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="526,657,46,26" Id="Gbh6vP5pyJxM7Ei8KsTboM">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.Blend" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Colors" />
+                      <CategoryReference Kind="ClassType" Name="Blend" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="EwBhG77Nk45MUk4XEXkWe9" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="TE3GPAxgPA0P7KNktqirXQ" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="JUZWRdYG8vFOgHk2d6rrfk" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="PgaQjAkOu1pQSdyfNpqRq4" Ids="Dds2oyJoQMWNPGfJk7YnA9,EwBhG77Nk45MUk4XEXkWe9" />
+                  <ControlPoint Id="GuKa1sIOR6kPkjxiNJotKu" Bounds="569,703" />
+                  <Link Id="KQtLjRc5lfTPn8ch5I8GOU" Ids="JUZWRdYG8vFOgHk2d6rrfk,GuKa1sIOR6kPkjxiNJotKu" />
+                  <Pin Id="OyC8gUme1CCPEVLnGoC2E9" Name="Result" Kind="OutputPin" Bounds="570,628" />
+                  <Link Id="TDurEjTkqB2L7k0b8ize1p" Ids="GuKa1sIOR6kPkjxiNJotKu,OyC8gUme1CCPEVLnGoC2E9" IsHidden="true" />
+                  <Node Bounds="587,587,64,19" Id="Cu2cYWuKPNQLCUyGwzqLJ2">
+                    <p:NodeReference LastCategoryFullName="Color.ColorBlender.HSV" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="FromRGBA" />
+                    </p:NodeReference>
+                    <Pin Id="UQsVb3INlNZOf7jbqQgN8u" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="LLxKfHbcPJyONOQAAMbc9S" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Link Id="DWiahLzXD9cP2zNBwWRqVV" Ids="LLxKfHbcPJyONOQAAMbc9S,BcU6cX6sWvxNj2ZlFaldfv" />
+                  <Pad Id="JN0Qp9dSu0SQUwpCZMw4Dd" Comment="" Bounds="528,592,20,15" ShowValueBox="true" isIOBox="true">
+                    <p:TypeAnnotation LastCategoryFullName="RGBA.ColorBlender.Algorithms" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="TypeFlag" Name="ColorExplorer" />
+                    </p:TypeAnnotation>
+                  </Pad>
+                  <Link Id="Uir1SI8XfLTNJMye2gDTx3" Ids="JN0Qp9dSu0SQUwpCZMw4Dd,QYSLP5mmEH3L0f5Iqa2FhH" />
+                  <ControlPoint Id="JyXktdi5bUEPj4k5IXqDee" Bounds="589,570" />
+                  <Link Id="LeBOQUjuyiBMJRQiLWcore" Ids="JyXktdi5bUEPj4k5IXqDee,UQsVb3INlNZOf7jbqQgN8u" />
+                  <Pin Id="L0WyEvxndP5McBJRfHp4jg" Name="Input" Kind="InputPin" Bounds="600,580" />
+                  <Link Id="SuInppTYQ1mOWVZNQrh3pX" Ids="L0WyEvxndP5McBJRfHp4jg,JyXktdi5bUEPj4k5IXqDee" IsHidden="true" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="JopxVTNNJWNMHvJVa8GZjO" IsHidden="true">
+              <Fragment Id="T64E7zuJjsXPzVtYL3rshS" Patch="Qo9Lvp2FbvgQD0oU4CLzBX" Enabled="true" />
+              <Fragment Id="R6q783MFinOPElOo6wjBaD" Patch="AbAj8Z4BfxSP1suRjtd3Aa" />
+            </ProcessDefinition>
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Complementary ************************
+
+-->
+        <Node Name="Complementary" Bounds="586,509" Id="Pa73P7UrdhVOYLNJeAP1wO">
+          <p:NodeReference>
+            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="ColorBlender.Algorithms" LastSymbolSource="ColorBlender.dll">
+            <Choice Kind="TypeFlag" Name="Complementary" />
+          </p:TypeAnnotation>
+          <Patch Id="FG0vl7ZqzstND8lbkYMPMw">
+            <Canvas Id="DyoQ7raZzqZN1HQuuQPpBa" CanvasType="Group">
+              <!--
+
+    ************************ CreateDefault (Internal) ************************
+
+-->
+              <Node Name="CreateDefault (Internal)" Bounds="658,338,97,83" Id="OlkgYJEDrz2MvgaNmMB8yA">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="LHUfD8sLXkSMaU6aSfdJG4">
+                  <Node Bounds="670,361,10,10" AutoConnect="true" Id="AsdVhYRkoxVM1A3BAv8U4J">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Algorithms.Complementary" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.Algorithms.Complementary" />
+                    </p:NodeReference>
+                    <Pin Id="QvnPPFoYNC8Mi6FNTfaSSy" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <ControlPoint Id="PAatMeWGxCQPUILV2yN4N7" Bounds="672,404" />
+                  <Link Id="JipODvOfpP0N9pKdYxVVVK" Ids="QvnPPFoYNC8Mi6FNTfaSSy,PAatMeWGxCQPUILV2yN4N7" />
+                  <Pin Id="SXFuVS7rCQGO8ZBRXPOBd1" Name="Output" Kind="OutputPin" Bounds="671,401" />
+                  <Link Id="Fi4VxTnA8zpN3uVmv9bhf5" Ids="PAatMeWGxCQPUILV2yN4N7,SXFuVS7rCQGO8ZBRXPOBd1" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Match ************************
+
+-->
+              <Node Name="Match" Bounds="659,495,172,160" Id="GseImRnozgnLm9CpTgaX4W">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="K2EZXwsh3B8LsahYT4OfKA">
+                  <Node Bounds="687,557,73,26" AutoConnect="true" Id="PzL3OvqriBXPGD8QgvN7Je">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Algorithms.Complementary" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Match" />
+                      <FullNameCategoryReference ID="ColorBlender.Algorithms.Complementary" />
+                    </p:NodeReference>
+                    <Pin Id="JPJHBbHdLRTQGr0eFqWbyc" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="QFOWcYqRuOPMWGwE0wwy9F" Name="Hsv" Kind="InputPin" />
+                    <Pin Id="DwofYsvzaa7MULkQQIE2x8" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Pad Id="PZLMrQ9q5NFLCYmGi1SIZ8" Comment="" Bounds="675,540,20,15" ShowValueBox="true" isIOBox="true">
+                    <p:TypeAnnotation LastCategoryFullName="RGBA.ColorBlender.Algorithms" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="TypeFlag" Name="Complementary" />
+                    </p:TypeAnnotation>
+                  </Pad>
+                  <Link Id="K6si8lQV5XcOoHrSy1IEAu" Ids="PZLMrQ9q5NFLCYmGi1SIZ8,JPJHBbHdLRTQGr0eFqWbyc" />
+                  <Node Bounds="755,529,64,19" Id="MSlk9oG2S6AL82Agab5TF7">
+                    <p:NodeReference LastCategoryFullName="Color.ColorBlender.HSV" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="FromRGBA" />
+                    </p:NodeReference>
+                    <Pin Id="GwopNUu4dSeLvUloV1TCmu" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="J6EeuiXL652L4Si9bE7Phl" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Link Id="UKEupUJqhPbOzkjYTpwKc2" Ids="J6EeuiXL652L4Si9bE7Phl,QFOWcYqRuOPMWGwE0wwy9F" />
+                  <ControlPoint Id="AM64evODyImPI827Te0QFu" Bounds="757,513" />
+                  <Link Id="ApQgJDw2nKMLdRg3VUgbe4" Ids="AM64evODyImPI827Te0QFu,GwopNUu4dSeLvUloV1TCmu" />
+                  <Pin Id="Kwhz54iziShNruPIqjiqxO" Name="Input" Kind="InputPin" Bounds="751,463" />
+                  <Link Id="NXuV6fSGSg2QAkedAltx0H" Ids="Kwhz54iziShNruPIqjiqxO,AM64evODyImPI827Te0QFu" IsHidden="true" />
+                  <Node Bounds="687,595,46,26" Id="Kgtz87oWYlENfOd6uO3LKi">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.Blend" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Colors" />
+                      <CategoryReference Kind="ClassType" Name="Blend" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="KqQG30fEXkrPy8qmVs9PtM" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="OGU4SXKWHjjOq7wCL5Q5Eg" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="TIoLDH5RAgZOfyUbnjckXU" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="Rh0FyT4ZmeNQVEI23Cz5UI" Ids="DwofYsvzaa7MULkQQIE2x8,KqQG30fEXkrPy8qmVs9PtM" />
+                  <ControlPoint Id="K4vZg3R0Pc2OJHC3TejG1I" Bounds="730,638" />
+                  <Link Id="PVa6dRhREjQPjp3SdOFQCc" Ids="TIoLDH5RAgZOfyUbnjckXU,K4vZg3R0Pc2OJHC3TejG1I" />
+                  <Pin Id="CpQBJE73YPONN5vxX4Cw72" Name="Result" Kind="OutputPin" Bounds="714,634" />
+                  <Link Id="Fu8hypBnzgBNZwcvAHgGWl" Ids="K4vZg3R0Pc2OJHC3TejG1I,CpQBJE73YPONN5vxX4Cw72" IsHidden="true" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="M1AviCdsMUSMqC49SA5ULU" IsHidden="true">
+              <Fragment Id="BU8kICmlEVwL5GhKTjs27Z" Patch="OlkgYJEDrz2MvgaNmMB8yA" Enabled="true" />
+              <Fragment Id="OO3MStADFFxPUoc4832WZd" Patch="GseImRnozgnLm9CpTgaX4W" />
+            </ProcessDefinition>
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ SingleHue ************************
+
+-->
+        <Node Name="SingleHue" Bounds="306,559" Id="NIbiQFugm7qL7Fe4xrcjZy">
+          <p:NodeReference>
+            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="ColorBlender.Algorithms" LastSymbolSource="ColorBlender.dll">
+            <Choice Kind="TypeFlag" Name="SingleHue" />
+          </p:TypeAnnotation>
+          <Patch Id="B3lgOrJRjnlOIUDN8GoaT4">
+            <Canvas Id="UYGTvnXWx7dP7wi4LKyUwJ" CanvasType="Group">
+              <!--
+
+    ************************ CreateDefault (Internal) ************************
+
+-->
+              <Node Name="CreateDefault (Internal)" Bounds="575,332,76,86" Id="T2UTbFwMenbOPSsIVD5cvC">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="H6oAGMWHyJxOUE2GThAQC8">
+                  <Node Bounds="587,355,10,10" AutoConnect="true" Id="R8oVxh1HiZAL4Hk9RkDsdb">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Algorithms.SingleHue" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.Algorithms.SingleHue" />
+                    </p:NodeReference>
+                    <Pin Id="VhChMDQzYJwPWZhFHZ3Hf1" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <ControlPoint Id="DRO5xnZdVKHPWTaLKslBOV" Bounds="589,401" />
+                  <Link Id="OdD5WbcEtBYLhsV4CfKRBn" Ids="VhChMDQzYJwPWZhFHZ3Hf1,DRO5xnZdVKHPWTaLKslBOV" />
+                  <Pin Id="DhENPDquARSQZSZveUZdvq" Name="Output" Kind="OutputPin" Bounds="600,401" />
+                  <Link Id="UE8eKJjkx6GPf5Hzm6v9L6" Ids="DRO5xnZdVKHPWTaLKslBOV,DhENPDquARSQZSZveUZdvq" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Match ************************
+
+-->
+              <Node Name="Match" Bounds="556,501,154,163" Id="H6M0M9tYpNVOrlTIhWRw3J">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="OZnbHcTyE9WPvzlKwdl8Mk">
+                  <Node Bounds="587,565,52,26" AutoConnect="true" Id="Nybe9n7bUTgO6FQ9aBWW7B">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Algorithms.SingleHue" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Match" />
+                      <FullNameCategoryReference ID="ColorBlender.Algorithms.SingleHue" />
+                    </p:NodeReference>
+                    <Pin Id="SeWchLblJ8vPtg5YOzl5RI" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="QnxhQX4P4DJMFtFCLbUN8K" Name="Hsv" Kind="InputPin" />
+                    <Pin Id="K7FT6odGaiBNKLgLzlWFUh" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="634,534,64,19" Id="FxEpmO6GOquQPJzTng7DfQ">
+                    <p:NodeReference LastCategoryFullName="Color.ColorBlender.HSV" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="FromRGBA" />
+                    </p:NodeReference>
+                    <Pin Id="L7DE5ZNDVtyNopVSP4Fv95" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Ei04fjeoB20N7FTBmez1JV" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Link Id="IQg3t7T6J3TLG7bX2J6T3K" Ids="Ei04fjeoB20N7FTBmez1JV,QnxhQX4P4DJMFtFCLbUN8K" />
+                  <Pad Id="JVZeyAd07jwLHguMFtet37" Comment="" Bounds="572,539,20,15" ShowValueBox="true" isIOBox="true">
+                    <p:TypeAnnotation LastCategoryFullName="RGBA.ColorBlender.Algorithms" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="TypeFlag" Name="SingleHue" />
+                    </p:TypeAnnotation>
+                  </Pad>
+                  <Link Id="EIjqbC0w3yWNSIlQWgXDFS" Ids="JVZeyAd07jwLHguMFtet37,SeWchLblJ8vPtg5YOzl5RI" />
+                  <ControlPoint Id="Iqz25LpNXDoQHaNLNKXGMq" Bounds="636,519" />
+                  <Link Id="TmtR0A2H8wIM6HJyqcdGCc" Ids="Iqz25LpNXDoQHaNLNKXGMq,L7DE5ZNDVtyNopVSP4Fv95" />
+                  <Pin Id="V0UTdF8lgMuNfzb0sa6XPP" Name="Input" Kind="InputPin" Bounds="652,524" />
+                  <Link Id="RlJQLTKGskTQGyViYchpDp" Ids="V0UTdF8lgMuNfzb0sa6XPP,Iqz25LpNXDoQHaNLNKXGMq" IsHidden="true" />
+                  <Node Bounds="587,601,46,26" Id="LoLRinVYglaMG1m8RGvO9f">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.Blend" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Colors" />
+                      <CategoryReference Kind="ClassType" Name="Blend" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="JqowuL2u6RtOD0I2BAg8ys" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="SHiW26J5X1VQDcbNdWNAUl" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="IHJNPIUusCLOJ31HhI1W2A" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="O1s5WB4dpI2PplxhUTW4wa" Ids="K7FT6odGaiBNKLgLzlWFUh,JqowuL2u6RtOD0I2BAg8ys" />
+                  <ControlPoint Id="NKZVSevReZbQAWsZJcU5iC" Bounds="630,647" />
+                  <Link Id="HXEVT1WWTG3OmTDG5I7DDD" Ids="IHJNPIUusCLOJ31HhI1W2A,NKZVSevReZbQAWsZJcU5iC" />
+                  <Pin Id="EAOD9SgF3xwLYB7iYvAHvk" Name="Result" Kind="OutputPin" Bounds="629,648" />
+                  <Link Id="CGXCKPfKNHkM8VUh4UpCNv" Ids="NKZVSevReZbQAWsZJcU5iC,EAOD9SgF3xwLYB7iYvAHvk" IsHidden="true" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="VIPfoiuidX1K9Z8dzUuBQL" IsHidden="true">
+              <Fragment Id="Okv0CjKew0jN6sM20etiHP" Patch="T2UTbFwMenbOPSsIVD5cvC" Enabled="true" />
+              <Fragment Id="Ih3YS3MtK6WQdYlqvr4JSQ" Patch="H6M0M9tYpNVOrlTIhWRw3J" />
+            </ProcessDefinition>
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ SplitComplementary ************************
+
+-->
+        <Node Name="SplitComplementary" Bounds="586,559" Id="Fh5gSaCk5yGMUGY6LI7Zf7">
+          <p:NodeReference>
+            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="ColorBlender.Algorithms" LastSymbolSource="ColorBlender.dll">
+            <Choice Kind="TypeFlag" Name="SplitComplementary" />
+          </p:TypeAnnotation>
+          <Patch Id="VoypdXPRJggL2OTUWFgJ4u">
+            <Canvas Id="FVCpA0TDXonL7UqCRBIRdi" CanvasType="Group">
+              <!--
+
+    ************************ CreateDefault (Internal) ************************
+
+-->
+              <Node Name="CreateDefault (Internal)" Bounds="669,283,112,81" Id="CRYkfxXVvIzLjMAG4G4tta">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="VxB8RizAYoNOZMMiqF6PLf">
+                  <Node Bounds="681,306,10,10" AutoConnect="true" Id="MVb5e7jeKiIMaYu9d7YqYz">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Algorithms.SplitComplementary" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.Algorithms.SplitComplementary" />
+                    </p:NodeReference>
+                    <Pin Id="P3eHeJ1TGrqNRmgZ1eeALy" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <ControlPoint Id="U4Q3MoqcvutLvBDpBVyjZV" Bounds="683,347" />
+                  <Link Id="CVyiQiyThWnPH2kOGX9R2A" Ids="P3eHeJ1TGrqNRmgZ1eeALy,U4Q3MoqcvutLvBDpBVyjZV" />
+                  <Pin Id="GkFBTggISc3OmMbrbDkL7S" Name="Output" Kind="OutputPin" Bounds="685,347" />
+                  <Link Id="TJ8gHpW3wZ2OXI5m3vEzip" Ids="U4Q3MoqcvutLvBDpBVyjZV,GkFBTggISc3OmMbrbDkL7S" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Match ************************
+
+-->
+              <Node Name="Match" Bounds="681,437,191,186" Id="JT8BLRzmtWcPxEDeuVnxIL">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="Tb8dnqu1OgQPflK0SB6HE9">
+                  <Node Bounds="713,509,88,26" AutoConnect="true" Id="HeWYuICjTSTQHRFOUx07wF">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Algorithms.SplitComplementary" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Match" />
+                      <FullNameCategoryReference ID="ColorBlender.Algorithms.SplitComplementary" />
+                    </p:NodeReference>
+                    <Pin Id="TO2QGQWuU8BOWxnI059qvC" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="LgM7e9NY61aOuFOAU3Vr4Y" Name="Hsv" Kind="InputPin" />
+                    <Pin Id="Jd4Bd9WXic3LkWEbc7G6YE" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Pin Id="O1zDktytHvwNPNpNF5SSRj" Name="Input" Kind="InputPin" />
+                  <Node Bounds="796,470,64,19" Id="EtBDth5zaeLNUKlNYB950B">
+                    <p:NodeReference LastCategoryFullName="Color.ColorBlender.HSV" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="FromRGBA" />
+                    </p:NodeReference>
+                    <Pin Id="Smy61TkEbkgOFDMFErvMUI" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="VYcjA00h3h6NUSf5nd3Rsv" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Link Id="UI9bNpjkqD5Ok7GmNiJhQH" Ids="VYcjA00h3h6NUSf5nd3Rsv,LgM7e9NY61aOuFOAU3Vr4Y" />
+                  <ControlPoint Id="V5u1ZC155JwQTGvKKGEPBG" Bounds="798,455" />
+                  <Link Id="LrMXptYGX3rNTqM3wC0zwy" Ids="V5u1ZC155JwQTGvKKGEPBG,Smy61TkEbkgOFDMFErvMUI" />
+                  <Link Id="Sa1ds9GLEiWLizaKdXCcZy" Ids="O1zDktytHvwNPNpNF5SSRj,V5u1ZC155JwQTGvKKGEPBG" IsHidden="true" />
+                  <Pad Id="SO1qQuRHJdCLu2EphSCv7r" Comment="" Bounds="697,490,20,15" ShowValueBox="true" isIOBox="true">
+                    <p:TypeAnnotation LastCategoryFullName="RGBA.ColorBlender.Algorithms" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="TypeFlag" Name="SplitComplementary" />
+                    </p:TypeAnnotation>
+                  </Pad>
+                  <Link Id="MwUHPGxDSSqOkrA99v2ei4" Ids="SO1qQuRHJdCLu2EphSCv7r,TO2QGQWuU8BOWxnI059qvC" />
+                  <Node Bounds="713,552,46,26" Id="K5QzXWYmR2eMMLfv5fLOlW">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.Blend" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Colors" />
+                      <CategoryReference Kind="ClassType" Name="Blend" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="ApKseWqRpkTOtEq0yfCWk5" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Cb7sPEQDqScMjhcPQTZRHF" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="B0xeKYUjFfQOPgnXEL6zJC" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="VdfT2A6pAxZL6ZW0vtTMRQ" Ids="Jd4Bd9WXic3LkWEbc7G6YE,ApKseWqRpkTOtEq0yfCWk5" />
+                  <ControlPoint Id="FklMTBpPfdNLy5otcQ2U3Q" Bounds="756,606" />
+                  <Link Id="SmOjJr9o5SSQPZUAJtmtuM" Ids="B0xeKYUjFfQOPgnXEL6zJC,FklMTBpPfdNLy5otcQ2U3Q" />
+                  <Pin Id="C0XmuhDtjCbOSCgpcBEwuu" Name="Result" Kind="OutputPin" Bounds="724,602" />
+                  <Link Id="AKS6QJh5kKqMrI6sGIQu2w" Ids="FklMTBpPfdNLy5otcQ2U3Q,C0XmuhDtjCbOSCgpcBEwuu" IsHidden="true" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="GH9ghPETOxpOEXW6J74nzZ" IsHidden="true">
+              <Fragment Id="SP6MwurWDc6Me4iVg6PaN4" Patch="CRYkfxXVvIzLjMAG4G4tta" Enabled="true" />
+              <Fragment Id="OGzPOON3sudLzbsje8wjeW" Patch="JT8BLRzmtWcPxEDeuVnxIL" />
+            </ProcessDefinition>
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Square ************************
+
+-->
+        <Node Name="Square" Bounds="306,609" Id="Ijm1UK9nZESMWpMDpSiNqu">
+          <p:NodeReference>
+            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="ColorBlender.Algorithms" LastSymbolSource="ColorBlender.dll">
+            <Choice Kind="TypeFlag" Name="Square" />
+          </p:TypeAnnotation>
+          <Patch Id="Vh4n9MV7MFkNmrVP7hj4Tm">
+            <Canvas Id="ISrQDyGhGu0P15dQe8FhUZ" CanvasType="Group">
+              <!--
+
+    ************************ CreateDefault (Internal) ************************
+
+-->
+              <Node Name="CreateDefault (Internal)" Bounds="530,298,70,84" Id="IuDctYKNJG5O6FBeq7QZny">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="B9uNEQq4YSrOS3HWcm9FZa">
+                  <Node Bounds="542,321,10,10" AutoConnect="true" Id="PNqkytZJVgJQF5rOBsXpLA">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Algorithms.Square" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.Algorithms.Square" />
+                    </p:NodeReference>
+                    <Pin Id="Fa7zMFA9J2cNj0GEJu8Esk" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <ControlPoint Id="KvHvtMTjjSDOmKWMnjI7NH" Bounds="544,365" />
+                  <Link Id="S4d9UBjSw32MaI53unahCI" Ids="Fa7zMFA9J2cNj0GEJu8Esk,KvHvtMTjjSDOmKWMnjI7NH" />
+                  <Pin Id="A8k7UMrnCwgMYxSiPgdhNg" Name="Output" Kind="OutputPin" Bounds="542,359" />
+                  <Link Id="AJ6bGcQ0kcUPoQRglUec06" Ids="KvHvtMTjjSDOmKWMnjI7NH,A8k7UMrnCwgMYxSiPgdhNg" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Match ************************
+
+-->
+              <Node Name="Match" Bounds="531,440,147,172" Id="Rg4WROWIiAdNWYKoBPzztE">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="M7DnwgVepLWQc7a5Cb5qJg">
+                  <Node Bounds="563,501,44,26" AutoConnect="true" Id="LYoHH8d9dVcMdljvfZHgH9">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Algorithms.Square" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Match" />
+                      <FullNameCategoryReference ID="ColorBlender.Algorithms.Square" />
+                    </p:NodeReference>
+                    <Pin Id="FUDlzgbTNsXMbEqbVhUDcO" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="E252hQdF1rjNM43Z6IMF0S" Name="Hsv" Kind="InputPin" />
+                    <Pin Id="IhNTAF25J4bNJUFr9zUJhx" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Pad Id="Jtfg6EPYrrHMjCpc6zcLOD" Comment="" Bounds="547,476,20,15" ShowValueBox="true" isIOBox="true">
+                    <p:TypeAnnotation LastCategoryFullName="RGBA.ColorBlender.Algorithms" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="TypeFlag" Name="Square" />
+                    </p:TypeAnnotation>
+                  </Pad>
+                  <Link Id="ErVCJvdGkPYOXFbtU6NEsg" Ids="Jtfg6EPYrrHMjCpc6zcLOD,FUDlzgbTNsXMbEqbVhUDcO" />
+                  <Node Bounds="602,472,64,19" Id="Fcx5sIN6PvvNLx2TYkF5wu">
+                    <p:NodeReference LastCategoryFullName="Color.ColorBlender.HSV" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="FromRGBA" />
+                    </p:NodeReference>
+                    <Pin Id="Eap8T28WSQTNjNpbh6Xb2U" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="QVTJer4XNblLcSLDoM85L7" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Link Id="Vy9C8e4k5oXPOCjq8mgLbY" Ids="QVTJer4XNblLcSLDoM85L7,E252hQdF1rjNM43Z6IMF0S" />
+                  <ControlPoint Id="De0PMAVfXIlM9ctX5tnWyy" Bounds="604,458" />
+                  <Link Id="Pe7IVy7LYbLNthYBQc2lcv" Ids="De0PMAVfXIlM9ctX5tnWyy,Eap8T28WSQTNjNpbh6Xb2U" />
+                  <Pin Id="BFuhYBBeITGMZGBepajUWG" Name="Input" Kind="InputPin" Bounds="593,434" />
+                  <Link Id="AbnPsof1sLqP39hhGZE4oZ" Ids="BFuhYBBeITGMZGBepajUWG,De0PMAVfXIlM9ctX5tnWyy" IsHidden="true" />
+                  <Node Bounds="563,545,46,26" Id="OXyvy11YkgHNVOpIJNXnvJ">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.Blend" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Colors" />
+                      <CategoryReference Kind="ClassType" Name="Blend" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="D4kGFM2iiXcP1IJid1nj46" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="MhQM7lXqaK3Qcu8fky2R1X" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="PGx4lbD6d36MUSJvzowB4U" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="MD6wfJ8NVYkN54XEJsCiDr" Ids="IhNTAF25J4bNJUFr9zUJhx,D4kGFM2iiXcP1IJid1nj46" />
+                  <ControlPoint Id="Syv37gqEbt9N3RfKQFBcM6" Bounds="606,595" />
+                  <Link Id="Me87V7SdxgpPC4H7vNx1se" Ids="PGx4lbD6d36MUSJvzowB4U,Syv37gqEbt9N3RfKQFBcM6" />
+                  <Pin Id="MKX6PeTpdgkL5IglHZsWun" Name="Result" Kind="OutputPin" Bounds="645,590" />
+                  <Link Id="Jg8QOZpDv4pLvdmuYcjH2Q" Ids="Syv37gqEbt9N3RfKQFBcM6,MKX6PeTpdgkL5IglHZsWun" IsHidden="true" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="CQj2UoQCEd6K9nN4ujfcpP" IsHidden="true">
+              <Fragment Id="KX2gQi6Ay6ZLnRaegJNtXO" Patch="IuDctYKNJG5O6FBeq7QZny" Enabled="true" />
+              <Fragment Id="TtSSqfN2kg5MaEgskXnvbS" Patch="Rg4WROWIiAdNWYKoBPzztE" />
+            </ProcessDefinition>
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Triadic ************************
+
+-->
+        <Node Name="Triadic" Bounds="586,609" Id="IsLXNpj0W4zMYiB5YY5jUR">
+          <p:NodeReference>
+            <Choice Kind="ForwardRecordDefinition" Name="Immutable Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="ColorBlender.Algorithms" LastSymbolSource="ColorBlender.dll">
+            <Choice Kind="TypeFlag" Name="Triadic" />
+          </p:TypeAnnotation>
+          <p:ForwardAllNodesOfTypeDefinition p:Type="Boolean">false</p:ForwardAllNodesOfTypeDefinition>
+          <Patch Id="J0b9xSYVuFCQZfASlmd2BM">
+            <Canvas Id="K2yNjmkYlfyNb6OPyvOIvl" CanvasType="Group">
+              <!--
+
+    ************************ Match ************************
+
+-->
+              <Node Name="Match" Bounds="510,317,156,168" Id="Td9eZaA13IhMhjyDrlQJvH">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="NshcTkXihRNOrPnJ6vsjhK">
+                  <Node Bounds="533,379,10,10" AutoConnect="true" Id="RIiTVpJEibiPfPvbWOhJDe">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Algorithms.Triadic" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Match" />
+                      <FullNameCategoryReference ID="ColorBlender.Algorithms.Triadic" />
+                    </p:NodeReference>
+                    <Pin Id="CdELSwL6ZtWOhae1ivr6IE" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="JeEC3CoyJPWNiRGSuPhVXe" Name="Hsv" Kind="InputPin" />
+                    <Pin Id="INJcKPRs9tfMs7fGSRA7Te" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Pad Id="C7QqAzuYaAfQJOP2Iqsges" Comment="" Bounds="526,346,20,15" ShowValueBox="true" isIOBox="true">
+                    <p:TypeAnnotation LastCategoryFullName="RGBA.ColorBlender.Algorithms" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="TypeFlag" Name="Triadic" />
+                    </p:TypeAnnotation>
+                  </Pad>
+                  <Link Id="E397cxH0ApuPRNO9PoJTGS" Ids="C7QqAzuYaAfQJOP2Iqsges,CdELSwL6ZtWOhae1ivr6IE" />
+                  <Node Bounds="572,351,64,19" Id="StrkHt6lbqUMxzbPqQ14cg">
+                    <p:NodeReference LastCategoryFullName="Color.ColorBlender.HSV" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="FromRGBA" />
+                    </p:NodeReference>
+                    <Pin Id="PXQug91bZdEOvHjnmjkkmt" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="VJcg8q0QoEpO9eAeO7d6Ca" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Link Id="Ebf9tfEG3veMeljEi2kxBC" Ids="VJcg8q0QoEpO9eAeO7d6Ca,JeEC3CoyJPWNiRGSuPhVXe" />
+                  <ControlPoint Id="OPO7uSjKL72QcOfGSaklHI" Bounds="574,335" />
+                  <Link Id="R92TpqqllsOPhWsxllEiQe" Ids="OPO7uSjKL72QcOfGSaklHI,PXQug91bZdEOvHjnmjkkmt" />
+                  <Pin Id="KxnX6gDt5jeMTel1Rbovgu" Name="Input" Kind="InputPin" Bounds="588,338" />
+                  <Link Id="Jr3GVsQUmvrNcLNBo8xRI5" Ids="KxnX6gDt5jeMTel1Rbovgu,OPO7uSjKL72QcOfGSaklHI" IsHidden="true" />
+                  <Node Bounds="572,420,46,26" Id="HC5PRdFUDSLQFAX1XQctcZ">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.Blend" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="ClassType" Name="Blend" />
+                      <Choice Kind="OperationCallFlag" Name="Colors" />
+                    </p:NodeReference>
+                    <Pin Id="O0Adf1WK5HCOKNs7hCB4GF" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="ACZ4Sbg8VkCN01U0LijsI6" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="UNnQG1bMy7KNzP3T4gcKzS" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="I2eDE4SMlOON0peJYIJEcD" Ids="INJcKPRs9tfMs7fGSRA7Te,O0Adf1WK5HCOKNs7hCB4GF" />
+                  <ControlPoint Id="IXt5d3V2qM1OlDEbNc8a7s" Bounds="615,468" />
+                  <Link Id="HEYu1CbXznWNhy0vmeskS5" Ids="UNnQG1bMy7KNzP3T4gcKzS,IXt5d3V2qM1OlDEbNc8a7s" />
+                  <Pin Id="GaoyxgHjOevMM1JHrrZZsq" Name="Result" Kind="OutputPin" Bounds="611,472" />
+                  <Link Id="FKlina0S0NeQA4IoZWOhYp" Ids="IXt5d3V2qM1OlDEbNc8a7s,GaoyxgHjOevMM1JHrrZZsq" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ CreateDefault (Internal) ************************
+
+-->
+              <Node Name="CreateDefault (Internal)" Bounds="711,331,70,90" Id="HU8jbiu4iKtQbBoTFBzWAa">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="ViVCfYuEuESLnVt0w0oItn">
+                  <Node Bounds="723,354,46,26" AutoConnect="true" Id="MLYoJollLC1PaDxYiyCiid">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Algorithms.Triadic" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.Algorithms.Triadic" />
+                    </p:NodeReference>
+                    <Pin Id="U2pBQ01UWuUPivlzTrdvA0" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <ControlPoint Id="QQLedD44yYWOolZGgIMyp8" Bounds="725,404" />
+                  <Link Id="JasJEa6bgDBQQz1PV05Lnq" Ids="U2pBQ01UWuUPivlzTrdvA0,QQLedD44yYWOolZGgIMyp8" />
+                  <Pin Id="JuO1XvDfIvoMMemgVngHWC" Name="Output" Kind="OutputPin" Bounds="699,410" />
+                  <Link Id="MRxyH9Byh2NQcK1j2Eoh2Q" Ids="QQLedD44yYWOolZGgIMyp8,JuO1XvDfIvoMMemgVngHWC" IsHidden="true" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="NwmkN9jiUNYQYrpVBMZUXq" IsHidden="true">
+              <Fragment Id="RSjxmvcOa3cPyOoLlEodDD" Patch="HU8jbiu4iKtQbBoTFBzWAa" Enabled="true" />
+              <Fragment Id="MgJNusiY9rDPJlr4y17czH" Patch="Td9eZaA13IhMhjyDrlQJvH" />
+            </ProcessDefinition>
+          </Patch>
+        </Node>
+      </Canvas>
+      <Canvas Id="Dostr9puPRpL4W8Te1K9N1" Name="Internal" Position="458,580">
+        <!--
+
+    ************************ IAlgorithm ************************
+
+-->
+        <Node Name="IAlgorithm" Bounds="392,305" Id="Tz7ReNSbHvdM98HvcoamrL">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="ColorBlender" LastSymbolSource="ColorBlender.dll">
+            <Choice Kind="TypeFlag" Name="IAlgorithm" />
+          </p:TypeAnnotation>
+          <Patch Id="TaUBHjKGgF6Oy3Na1M2sGk">
+            <Canvas Id="GZZytrIlvBOOlI50lv7CSC" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="UvShL7OiYZiQT14PKAFbiM" IsHidden="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+      <Canvas Id="DGpgxxUFprEN66yxqppduC" Name="Advanced" Position="460,513">
+        <!--
+
+    ************************ HSV ************************
+
+-->
+        <Node Name="HSV" Bounds="422,302" Id="HiZ7Y5ZcjsKPaVIhQbBiF4">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="ColorBlender" LastSymbolSource="ColorBlender.dll">
+            <Choice Kind="TypeFlag" Name="HSV" />
+          </p:TypeAnnotation>
+          <Patch Id="HRjhJp6odogMyGExZsZLJY">
+            <Canvas Id="HfwVWLanIVCPU8O0VSL9NF" CanvasType="Group">
+              <!--
+
+    ************************ H ************************
+
+-->
+              <Node Name="H" Bounds="406,275,112,110" Id="T8J4G1X40DsQNztzNvjbuf">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="BwDej11Npz9P62UUDgJb4q">
+                  <Node Bounds="418,298,31,26" AutoConnect="true" Id="OcWFEeb6BTPLHbzQBG6ayk">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.HSV" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="H" />
+                      <FullNameCategoryReference ID="ColorBlender.HSV" />
+                    </p:NodeReference>
+                    <Pin Id="QimlDG7AOgiPfFq1LZmP3G" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="MMxBKtYHYJWMJIX7mcln0J" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="ASc0zMBsi5BM8Gelfg3LVe" Name="H" Kind="OutputPin" />
+                  </Node>
+                  <Pin Id="Ebz6D3GnbgYLWUgV2S8pbi" Name="Output" Kind="OutputPin" />
+                  <Pin Id="S6850ho1veNPNZIRo6vJiR" Name="Input" Kind="InputPin" />
+                  <Node Bounds="444,333,62,19" Id="VtrqBrCQGPONVrBAyidUHP">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat32" />
+                    </p:NodeReference>
+                    <Pin Id="Jopxt8h7y50QZ1XwJzGdkG" Name="Input" Kind="InputPin" />
+                    <Pin Id="HMbbGC8yj9AQX9SRT0xjxi" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="P4b4xZtHW6xNVneZrqDopO" Ids="ASc0zMBsi5BM8Gelfg3LVe,Jopxt8h7y50QZ1XwJzGdkG" />
+                  <ControlPoint Id="RJPOvNe26MhMGcGndUNAsZ" Bounds="446,368" />
+                  <Link Id="C3G7AL9FjlDOQDDW3HOVcA" Ids="HMbbGC8yj9AQX9SRT0xjxi,RJPOvNe26MhMGcGndUNAsZ" />
+                  <Pin Id="MxIWse42BVlPQMt0oZ9Yqt" Name="Result" Kind="OutputPin" Bounds="447,391" />
+                  <Link Id="FC1gxMSg774NEyHLzJ5KB6" Ids="RJPOvNe26MhMGcGndUNAsZ,MxIWse42BVlPQMt0oZ9Yqt" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ SetH ************************
+
+-->
+              <Node Name="SetH" Bounds="686,272,118,102" Id="KK0YkD6ZjFRPJ1dbZigD9r">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="KnIU1vcGUQqQFuTMjnnDIC">
+                  <Node Bounds="698,328,10,10" AutoConnect="true" Id="QrMGKnaBV0jMJz86QsqA58">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.HSV" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="SetH" />
+                      <FullNameCategoryReference ID="ColorBlender.HSV" />
+                    </p:NodeReference>
+                    <Pin Id="KbGLS8TZGFNOLVUTpNBL12" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="RGjeXXPBv42Oidu1I5OHWa" Name="Value" Kind="InputPin" />
+                    <Pin Id="B3A9KKn2hBHNZMklp8cohK" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="JayDrOnMKW3MO96F008tax" Name="Output" Kind="OutputPin" />
+                  <Pin Id="Lr3iGjYY0fZL9dNNPnc0HD" Name="Input" Kind="InputPin" />
+                  <Node Bounds="730,302,62,19" Id="MXOvKoUyj6CPNv5Qn4sx8u">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat64" />
+                    </p:NodeReference>
+                    <Pin Id="Pq3emNdscrXLMB03WkqMU1" Name="Input" Kind="InputPin" />
+                    <Pin Id="NopL0sh5mmvOYjJTedsZlP" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="K62YGeY5uQ2MHtdYeEsXqw" Bounds="732,290" />
+                  <Link Id="Pt5JrTlBhnnPh7CWfsOrcY" Ids="K62YGeY5uQ2MHtdYeEsXqw,Pq3emNdscrXLMB03WkqMU1" />
+                  <Pin Id="Dq2zEf3D5itNtjQC7FqHDI" Name="H" Kind="InputPin" Bounds="758,338">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="UNumu2cgETcN5JVgwa0od8" Ids="Dq2zEf3D5itNtjQC7FqHDI,K62YGeY5uQ2MHtdYeEsXqw" IsHidden="true" />
+                  <Link Id="AekaFwnl6UGQFGkt96fA7Y" Ids="NopL0sh5mmvOYjJTedsZlP,RGjeXXPBv42Oidu1I5OHWa" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ S ************************
+
+-->
+              <Node Name="S" Bounds="407,440,112,110" Id="MvcNRSJR5P5MIhnSgxqrk2">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="HA0f1vdMIotMX03UWrgFvX">
+                  <Node Bounds="419,463,31,26" AutoConnect="true" Id="D0P7X2bayM8P2ymc3ZjRBh">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.HSV" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="S" />
+                      <FullNameCategoryReference ID="ColorBlender.HSV" />
+                    </p:NodeReference>
+                    <Pin Id="FEYXaHRBT5NMzjQM9aEsVf" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Hcbzxl7fTyBOYkHSf6IJ9s" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="VfL7DgynKcrO3HtVKkFKXL" Name="S" Kind="OutputPin" />
+                  </Node>
+                  <Pin Id="FMBzqUNH4y0NL4f7CUgscQ" Name="Input" Kind="InputPin" />
+                  <Pin Id="FWlZmzqj5ZtObHo6cFSH7s" Name="Output" Kind="OutputPin" />
+                  <Node Bounds="445,498,62,19" Id="FFLGPIV0pZgNwvDz6HHpBZ">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat32" />
+                    </p:NodeReference>
+                    <Pin Id="VixYogM9FaVLu3vYC9imX9" Name="Input" Kind="InputPin" />
+                    <Pin Id="M3b4bnfSy2sPf07WXyoU6X" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="SGtcmTTjni9L9djNhtDn3d" Bounds="447,533" />
+                  <Pin Id="Ie7eXIkBc5PLi4gJ3G2o1p" Name="Result" Kind="OutputPin" Bounds="447,391" />
+                  <Link Id="GNOuSiec4I2LHuvYoPqfpy" Ids="M3b4bnfSy2sPf07WXyoU6X,SGtcmTTjni9L9djNhtDn3d" />
+                  <Link Id="AOT9VleOmhoM7STSJLv6dc" Ids="SGtcmTTjni9L9djNhtDn3d,Ie7eXIkBc5PLi4gJ3G2o1p" IsHidden="true" />
+                  <Link Id="Ta13TZWZQ7GND9q6C3nlGZ" Ids="VfL7DgynKcrO3HtVKkFKXL,VixYogM9FaVLu3vYC9imX9" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ SetS ************************
+
+-->
+              <Node Name="SetS" Bounds="686,421,116,103" Id="TB2ehqtzDY6QP56B7jsmgn">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="JI8Zz0LfZvDLl7ThUPGTrD">
+                  <Node Bounds="698,478,10,10" AutoConnect="true" Id="Ttgu87GfXcgLIyPQRRPGx3">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.HSV" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="SetS" />
+                      <FullNameCategoryReference ID="ColorBlender.HSV" />
+                    </p:NodeReference>
+                    <Pin Id="EbXxBrGnBkHMFTMf3aKFPC" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="TYmrMuKA1ptOhcdco5WP3O" Name="Value" Kind="InputPin" />
+                    <Pin Id="HyoIJyfpq1fQD2avNaLKaH" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="FlUmSMod35EQElIsWCVKk8" Name="Output" Kind="OutputPin" />
+                  <Pin Id="EV978o8JfT0Nt5TWadtKGp" Name="Input" Kind="InputPin" />
+                  <Node Bounds="728,451,62,19" Id="I0dmj7ckG6rPzyxmO7DcPG">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat64" />
+                    </p:NodeReference>
+                    <Pin Id="O5GgJdhiq1nLXP6Oa78cpu" Name="Input" Kind="InputPin" />
+                    <Pin Id="DH3bwXaNDeYP5suWy9VBKs" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="HVeGB0b6Cr0O5AEt5vYhQI" Bounds="730,439" />
+                  <Pin Id="DJrD4RwpV1BPZe2YhS7gbr" Name="S" Kind="InputPin" Bounds="758,338">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="GheE21SEPRGLFDSbbfBfDZ" Ids="HVeGB0b6Cr0O5AEt5vYhQI,O5GgJdhiq1nLXP6Oa78cpu" />
+                  <Link Id="IFg3cMBNT24QO7lyDbcSLI" Ids="DJrD4RwpV1BPZe2YhS7gbr,HVeGB0b6Cr0O5AEt5vYhQI" IsHidden="true" />
+                  <Link Id="CZYNZyfm3ySL6UI4fNjuTl" Ids="DH3bwXaNDeYP5suWy9VBKs,TYmrMuKA1ptOhcdco5WP3O" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ V ************************
+
+-->
+              <Node Name="V" Bounds="406,605,112,113" Id="CZrH3ebu18wO7tJx9tCxZu">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="Ow7U4nVp1urOUtwnAsuwno">
+                  <Node Bounds="418,628,10,10" AutoConnect="true" Id="PUwYc3i3RKTO8vVpMI17SS">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.HSV" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="V" />
+                      <FullNameCategoryReference ID="ColorBlender.HSV" />
+                    </p:NodeReference>
+                    <Pin Id="HrMsEmIVKEMQVqxSfyWTk6" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="QSnkAjGPGTUMnS1oY9GUPT" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="TUGb6KTCfkyMDBdzgzXBgB" Name="V" Kind="OutputPin" />
+                  </Node>
+                  <Pin Id="OVTVfN94oQZL3QPwx0XE3b" Name="Output" Kind="OutputPin" />
+                  <Pin Id="AfNSoxixhBRM3xX34fpqIT" Name="Input" Kind="InputPin" />
+                  <Node Bounds="444,666,62,19" Id="ODFDvZXyuS5Pj2przCXNVG">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat32" />
+                    </p:NodeReference>
+                    <Pin Id="NKffiGapayoQBahup0iy6L" Name="Input" Kind="InputPin" />
+                    <Pin Id="Tba7lMWW5agOoGvXnR8nCy" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="QRnEBPK8RL0Laz8HL4j9Hh" Bounds="446,701" />
+                  <Pin Id="T7aiK8sTSw0N2ervqz9vPx" Name="Result" Kind="OutputPin" Bounds="447,391" />
+                  <Link Id="O43BBVdFXAlLx8RRySbUsA" Ids="Tba7lMWW5agOoGvXnR8nCy,QRnEBPK8RL0Laz8HL4j9Hh" />
+                  <Link Id="NNiqtMLSqPiPL2xQT09c6I" Ids="QRnEBPK8RL0Laz8HL4j9Hh,T7aiK8sTSw0N2ervqz9vPx" IsHidden="true" />
+                  <Link Id="F6DvFoV8pe1OzODuXgmbIH" Ids="TUGb6KTCfkyMDBdzgzXBgB,NKffiGapayoQBahup0iy6L" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ SetV ************************
+
+-->
+              <Node Name="SetV" Bounds="686,570,117,104" Id="PEXI9f4a1enP7vDOoFboaW">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="R4kAR4LvpuGOr6C8lbSKQV">
+                  <Node Bounds="698,628,10,10" AutoConnect="true" Id="LYTpyHmWMulNbOqj8L0h25">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.HSV" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="SetV" />
+                      <FullNameCategoryReference ID="ColorBlender.HSV" />
+                    </p:NodeReference>
+                    <Pin Id="LuYD11EDbz2Owz5ik3AnYe" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="UeVWs79uxWqNbxx02wCTTq" Name="Value" Kind="InputPin" />
+                    <Pin Id="Q7i2HQlvztCOLX1fEf6UiR" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="OPekSMiKnP5McxZ43bcKqv" Name="Input" Kind="InputPin" />
+                  <Pin Id="TCbMNEYmByeP2taDh34z73" Name="Output" Kind="OutputPin" />
+                  <Node Bounds="729,600,62,19" Id="QfO9s6wIHNLNOdtnPueGKD">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat64" />
+                    </p:NodeReference>
+                    <Pin Id="AMa99cg1gRMObpofKEN4fp" Name="Input" Kind="InputPin" />
+                    <Pin Id="DiGJ3CwyUzvOZpLfrci5yQ" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="JlaakFg2Dz3PqEr41JDD3v" Bounds="731,588" />
+                  <Pin Id="Ak01ibSF984O9NMi2Rgeru" Name="V" Kind="InputPin" Bounds="758,338">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="PE4tMadTxMlNqEaZXXOgYs" Ids="JlaakFg2Dz3PqEr41JDD3v,AMa99cg1gRMObpofKEN4fp" />
+                  <Link Id="IopztsXHNK3NjnDMdwrYUr" Ids="Ak01ibSF984O9NMi2Rgeru,JlaakFg2Dz3PqEr41JDD3v" IsHidden="true" />
+                  <Link Id="A8UhWCnR3oSNDKQiXKvSQ5" Ids="DiGJ3CwyUzvOZpLfrci5yQ,UeVWs79uxWqNbxx02wCTTq" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Create ************************
+
+-->
+              <Node Name="Create" Bounds="399,802,124,80" Id="R2BNiNjr82RPNG5ll6JeIF">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="POClx08s3kTP2kcbQ4qMoA">
+                  <Node Bounds="423,830,31,26" AutoConnect="true" Id="SQ5a5WMCjbCNPOy6W7sds3">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.HSV" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.HSV" />
+                    </p:NodeReference>
+                    <Pin Id="UrGX460lsRfL0EwsMz57xr" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="Nk4Les1t99nMbFomO2Wyjd" Name="Output" Kind="OutputPin" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Create ************************
+
+-->
+              <Node Name="Create" Bounds="679,802,124,80" Id="VssBKRRNwpZP4KjbpTSHPX">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="UAY2s7qEK1qNz4lBFhz0g7">
+                  <Node Bounds="703,830,31,26" AutoConnect="true" Id="KwwY0Gt6XwJObfmsUJvUXf">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.HSV" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.HSV" />
+                      <PinReference Kind="InputPin" Name="Hs" />
+                    </p:NodeReference>
+                    <Pin Id="BU0nhSdy7CdL8Zjs4rQezU" Name="Hs" Kind="InputPin" />
+                    <Pin Id="TXlY2JqbYkILwCWnR5jMmW" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="E7Or6rLBefCMOLbTPtEhFy" Name="Hs" Kind="InputPin" />
+                  <Pin Id="QYSvFSs1qEQNbA1PpaXUUa" Name="Output" Kind="OutputPin" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Create ************************
+
+-->
+              <Node Name="Create" Bounds="399,952,124,80" Id="Fhb4QtEiZmkLejOLsjIaZv">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="I0KKcif0v7rPmqsB6Yz69Z">
+                  <Node Bounds="423,980,31,26" AutoConnect="true" Id="DYw5pqWGaArNyWL5eZpVWd">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.HSV" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.HSV" />
+                      <PinReference Kind="InputPin" Name="Rg" />
+                    </p:NodeReference>
+                    <Pin Id="AcRCIl8mFA8LZDN91m6VVr" Name="Rg" Kind="InputPin" />
+                    <Pin Id="MN4JTQ8xylQNW5hJJZh4J6" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="FTxdxbPHej7OuxxGZukv5x" Name="Rg" Kind="InputPin" />
+                  <Pin Id="KW4Di3jah64M4Juj152hrT" Name="Output" Kind="OutputPin" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Create ************************
+
+-->
+              <Node Name="Create" Bounds="690,1013,127,208" Id="E31FMCzY2gENk0UGHRlr4n">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="LdI2ce1MYoLL3sBFzJZFZa">
+                  <Node Bounds="702,1175,46,26" AutoConnect="true" Id="O1lPGfm9eZkPxyF8esU6uy">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.HSV" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.HSV" />
+                      <PinReference Kind="InputPin" Name="H" />
+                    </p:NodeReference>
+                    <Pin Id="OYyBa3FfEXrLQ4FbHcjgtE" Name="H" Kind="InputPin" />
+                    <Pin Id="RUzmUsfhDDbM9KIC7LegCn" Name="S" Kind="InputPin" />
+                    <Pin Id="Sd4uWGW01UjLi8kPoumZbp" Name="V" Kind="InputPin" />
+                    <Pin Id="Kq1EMfMlt5TNe4IcE7QuMd" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="DAaJKnTGU5JQOCrGIU091S" Name="Output" Kind="OutputPin" />
+                  <Node Bounds="743,1143,62,19" Id="FjzJVpJT0UIMvF0tDt9mdG">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat32" />
+                    </p:NodeReference>
+                    <Pin Id="AzGMMEsuQ2rM2bgraqrM1A" Name="Input" Kind="InputPin" />
+                    <Pin Id="EAUT8pzGdrFOFPxsmnNsl1" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="VyUaPaUuDDuMrszwZ9x2Lw" Ids="EAUT8pzGdrFOFPxsmnNsl1,Sd4uWGW01UjLi8kPoumZbp" />
+                  <ControlPoint Id="JziN1xRSTDmQbnKRCuKSdb" Bounds="745,1129" />
+                  <Link Id="CUpGR0W9ka2PEqTfEp6Eyn" Ids="JziN1xRSTDmQbnKRCuKSdb,AzGMMEsuQ2rM2bgraqrM1A" />
+                  <Pin Id="G6LjZ2fyeOOPYjLySLaNmW" Name="V" Kind="InputPin" Bounds="780,976">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="ULpeUYnqnKYOv9NTqYH7Kp" Ids="G6LjZ2fyeOOPYjLySLaNmW,JziN1xRSTDmQbnKRCuKSdb" IsHidden="true" />
+                  <Node Bounds="723,1099,62,19" Id="CuIrvWCdzwpPV2K86AvgPA">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat32" />
+                    </p:NodeReference>
+                    <Pin Id="MlU70mb7dmCLzkmvUj7RvM" Name="Input" Kind="InputPin" />
+                    <Pin Id="DUYO0KdxwKTPYfknsqglij" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="E7z5ADsGkEJLa01VEuJMbm" Bounds="725,1085" />
+                  <Link Id="J2hJ1HAYQccOGeKbJAd533" Ids="E7z5ADsGkEJLa01VEuJMbm,MlU70mb7dmCLzkmvUj7RvM" />
+                  <Link Id="HbVVO2CI72iNwGCczBwCx2" Ids="DUYO0KdxwKTPYfknsqglij,RUzmUsfhDDbM9KIC7LegCn" />
+                  <Pin Id="OTOrp3PxgGROw9myCs3fq6" Name="S" Kind="InputPin">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="Ee55EdIKEdkPpCSuMQkzJf" Ids="OTOrp3PxgGROw9myCs3fq6,E7z5ADsGkEJLa01VEuJMbm" IsHidden="true" />
+                  <Node Bounds="702,1045,62,19" Id="OIN59DmXrvxPHK7LPLii1D">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat32" />
+                    </p:NodeReference>
+                    <Pin Id="Tkdqppp28uzPh8INKjGeZy" Name="Input" Kind="InputPin" />
+                    <Pin Id="EEuS4t7069tLEzwkHDGALx" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="AvwiMh4Q4KhOo7cF5mxGuz" Bounds="704,1031" />
+                  <Link Id="IzM2fip78VOLbUkQ0nHBZi" Ids="AvwiMh4Q4KhOo7cF5mxGuz,Tkdqppp28uzPh8INKjGeZy" />
+                  <Link Id="U6hh3y0DJUlMnW0MqdxbbI" Ids="EEuS4t7069tLEzwkHDGALx,OYyBa3FfEXrLQ4FbHcjgtE" />
+                  <Pin Id="HI2XiM2yvd6PEnNpGYfLu0" Name="H" Kind="InputPin">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="HnS7Q8D7QboOcgzX4j3I86" Ids="HI2XiM2yvd6PEnNpGYfLu0,AvwiMh4Q4KhOo7cF5mxGuz" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ ToRGB ************************
+
+-->
+              <Node Name="ToRGB" Bounds="399,1102,124,80" Id="NA2Iz0WORgTP06fvKOc7zs">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="DLqNOQMNd7uPwXC7M7PzVW">
+                  <Node Bounds="423,1130,31,26" AutoConnect="true" Id="DvN4THUrpovN7vTnFXDjyA">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.HSV" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="ToRGB" />
+                      <FullNameCategoryReference ID="ColorBlender.HSV" />
+                    </p:NodeReference>
+                    <Pin Id="KEHx1CD2PMlOXCXaVSS6Aj" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="QuJyXg0NWR3LdiugNWz9jS" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="OWTcBjHS18pLzHuKTnF2UM" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Pin Id="FRxyiJilAD5OJBMg5OShtX" Name="Input" Kind="InputPin" />
+                  <Pin Id="Sl7j5GMy2VqP8QLPkMgg14" Name="Output" Kind="OutputPin" />
+                  <Pin Id="AlbzWVEXYUiL1ukfedd7Q9" Name="Result" Kind="OutputPin" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Split ************************
+
+-->
+              <Node Name="Split" Bounds="1011,495,156,106" Id="HEz3dprhcKkNjH7jG3Dhij">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                </p:NodeReference>
+                <Patch Id="HJBVkWfVHdbLxu7A9v7S4e">
+                  <Node Bounds="1023,540,31,26" Id="S733R8B0sceQMVEn4mpQtn">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.HSV" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="ClassType" Name="HSV" />
+                      <Choice Kind="OperationCallFlag" Name="H" />
+                    </p:NodeReference>
+                    <Pin Id="Tkt0cmKLh2hNveZ5ouMFgK" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="ApbdVIczpPUO9i0naF5XoN" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="GDQ5hBYy6spPDczIjsKnHl" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="1068,540,31,26" Id="N8kng2NSkXrQJqlFxBcSeF">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.HSV" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="ClassType" Name="HSV" />
+                      <Choice Kind="OperationCallFlag" Name="S" />
+                    </p:NodeReference>
+                    <Pin Id="Gg10XxvYgIMPkThKJwQ4jd" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="TvfkOYB7o9lL5JAoEj9XKT" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="PgPfQ1vnOzlMKpl3liyJaQ" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="1109,540,31,26" Id="JlhGgLYHNuBOhoGU5yCiEV">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.HSV" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="ClassType" Name="HSV" />
+                      <Choice Kind="OperationCallFlag" Name="V" />
+                    </p:NodeReference>
+                    <Pin Id="PaQRW1eVEfbO9uycB26irJ" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="IwAC8AwGJR5Ls8d4iPOM5K" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="KNWvxPa67CuMHU0MnqX5yL" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="QkZ2KV1DM1vMd8HpVeTAyn" Bounds="1025,513" />
+                  <Link Id="EyDF55PpZvzMO0LnKbocHA" Ids="QkZ2KV1DM1vMd8HpVeTAyn,Tkt0cmKLh2hNveZ5ouMFgK" />
+                  <Pin Id="Jr3on4hwiF3NPvGYmssDHQ" Name="Input" Kind="InputPin" Bounds="1043,527" />
+                  <Link Id="G8nIGw2NguzOvd1lNCkGPB" Ids="Jr3on4hwiF3NPvGYmssDHQ,QkZ2KV1DM1vMd8HpVeTAyn" IsHidden="true" />
+                  <Link Id="CBe5QoY8YX7QABIjT6PORc" Ids="QkZ2KV1DM1vMd8HpVeTAyn,Gg10XxvYgIMPkThKJwQ4jd" />
+                  <Link Id="VVEZe1KxHLMN0VAG5lDPyi" Ids="QkZ2KV1DM1vMd8HpVeTAyn,PaQRW1eVEfbO9uycB26irJ" />
+                  <ControlPoint Id="S3WtqBls8CJMYNxtSsQuZY" Bounds="1051,584" />
+                  <Link Id="RlRoMNDkyIkPmBNEf0UFGB" Ids="GDQ5hBYy6spPDczIjsKnHl,S3WtqBls8CJMYNxtSsQuZY" />
+                  <Pin Id="BdNGQ6VGw8aNOUwD0ipEIG" Name="H" Kind="OutputPin" Bounds="1049,579" />
+                  <Link Id="CUb0EbXEakyP4YnM8IyPN6" Ids="S3WtqBls8CJMYNxtSsQuZY,BdNGQ6VGw8aNOUwD0ipEIG" IsHidden="true" />
+                  <ControlPoint Id="Vl7od6YLu3QOwP1fc3lOLA" Bounds="1096,584" />
+                  <Link Id="HndfA7q47JtQCGlrIg0i15" Ids="PgPfQ1vnOzlMKpl3liyJaQ,Vl7od6YLu3QOwP1fc3lOLA" />
+                  <Pin Id="O87uueG1EoSPqUrWk9To9Y" Name="S" Kind="OutputPin" Bounds="1098,586" />
+                  <Link Id="Pq0rHnBOqjiNX6F0vXPKPv" Ids="Vl7od6YLu3QOwP1fc3lOLA,O87uueG1EoSPqUrWk9To9Y" IsHidden="true" />
+                  <ControlPoint Id="JmCL3nlNLcSNJ1dE9mPFIj" Bounds="1137,584" />
+                  <Link Id="QSEg7KZRRKPNL2oRWQzowb" Ids="KNWvxPa67CuMHU0MnqX5yL,JmCL3nlNLcSNJ1dE9mPFIj" />
+                  <Pin Id="MxD3ZSe10DIQM60u2o5DOO" Name="V" Kind="OutputPin" Bounds="1137,585" />
+                  <Link Id="D2yuxkE1sVuL8LgB4NeXOg" Ids="JmCL3nlNLcSNJ1dE9mPFIj,MxD3ZSe10DIQM60u2o5DOO" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Split (Vector) ************************
+
+-->
+              <Node Name="Split (Vector)" Bounds="991,687,73,122" Id="RaGQZGWpJCQOaG4qVHJQbv">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                </p:NodeReference>
+                <Patch Id="IoBwNl6SHSZPBEHgq0aW35">
+                  <Node Bounds="1005,721,45,19" Id="HtDr7f5vmFAQB47PLtkMhO">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.HSV" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Split" />
+                      <CategoryReference Kind="ClassType" Name="HSV" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="HjUifhMPRQ2PS3ekrARQyQ" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="TRjmMOSWcdoPWU875FQJn5" Name="H" Kind="OutputPin" />
+                    <Pin Id="ERO1B7nJdZ4MJzY9U1M8dq" Name="S" Kind="OutputPin" />
+                    <Pin Id="TlzHq6ctBE1LN9F3q3acly" Name="V" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="EjRFcbAOGKSPywBqFFdfVd" Bounds="1007,705" />
+                  <Link Id="KKECmM0Jao6POFrSARka1d" Ids="EjRFcbAOGKSPywBqFFdfVd,HjUifhMPRQ2PS3ekrARQyQ" />
+                  <Pin Id="Tf3Pj8YEf0OQbLdFXzgALw" Name="Input" Kind="InputPin" Bounds="1015,712" />
+                  <Link Id="ICFUb95qf3TPn1f7jE4Bo5" Ids="Tf3Pj8YEf0OQbLdFXzgALw,EjRFcbAOGKSPywBqFFdfVd" IsHidden="true" />
+                  <Node Bounds="1003,754,49,19" Id="DS7UfjkUI6ePjWmZO5iXAx">
+                    <p:NodeReference LastCategoryFullName="3D.Vector3" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
+                      <CategoryReference Kind="Vector3Type" Name="Vector3" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="VfMfijOgoqBLLqaTN2rMzm" Name="X" Kind="InputPin" />
+                    <Pin Id="Fp8AnOr167QNTXf8jx129z" Name="Y" Kind="InputPin" />
+                    <Pin Id="KMqSAjvqUbtQLM5KMzZn1z" Name="Z" Kind="InputPin" />
+                    <Pin Id="HZcYNxzpFl5OXKxK003IAn" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Link Id="IYz6cr3LYh5Pj05xUUbX4B" Ids="TRjmMOSWcdoPWU875FQJn5,VfMfijOgoqBLLqaTN2rMzm" />
+                  <Link Id="RK3lnv8GRptM8Ku7gHCYw2" Ids="ERO1B7nJdZ4MJzY9U1M8dq,Fp8AnOr167QNTXf8jx129z" />
+                  <Link Id="CaXaIFwkXr7PI2azIwLmFz" Ids="TlzHq6ctBE1LN9F3q3acly,KMqSAjvqUbtQLM5KMzZn1z" />
+                  <ControlPoint Id="AkwzUI4g0GBPncQJNtKMdK" Bounds="1005,792" />
+                  <Link Id="FU9lSq4qv4ROfHUgA2Jkwl" Ids="HZcYNxzpFl5OXKxK003IAn,AkwzUI4g0GBPncQJNtKMdK" />
+                  <Pin Id="CEZAPFzS34ZOI6on1HvllN" Name="Output" Kind="OutputPin" Bounds="1009,786" />
+                  <Link Id="NrxjyXfB63NPSUuFBTh7xP" Ids="AkwzUI4g0GBPncQJNtKMdK,CEZAPFzS34ZOI6on1HvllN" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ ToRGBA ************************
+
+-->
+              <Node Name="ToRGBA" Bounds="1001,879,107,125" Id="DyDkq5Vu36ePH7ufbwNiUC">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                </p:NodeReference>
+                <Patch Id="SefUDcclEq7PSq0u5CWwCi">
+                  <Node Bounds="1013,911,36,19" Id="V669zTFuzgBOeM8f9sk5pt">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.HSV" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Split (Vector)" />
+                      <CategoryReference Kind="ClassType" Name="HSV" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="TTGxzgmIpZuN7ysC3YcT7D" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="BlSguFqA1pLMTqT12Swt1j" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <ControlPoint Id="LkpyB65Jwd8PlVYquNnwqU" Bounds="1015,897" />
+                  <Link Id="TpZ1ZHlIBiQOLaGvuYnXSc" Ids="LkpyB65Jwd8PlVYquNnwqU,TTGxzgmIpZuN7ysC3YcT7D" />
+                  <Pin Id="GKMDYSgIXYUMCTfLxrjeOD" Name="Input" Kind="InputPin" Bounds="1040,903">
+                    <p:TypeAnnotation LastCategoryFullName="RGBA.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="TypeFlag" Name="HSV" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="LwsNhaxf9brM6vG052ba4x" Ids="GKMDYSgIXYUMCTfLxrjeOD,LkpyB65Jwd8PlVYquNnwqU" IsHidden="true" />
+                  <Node Bounds="1013,949,41,19" Id="K0ziA1qyKXkLx7G6kPs1rz">
+                    <p:NodeReference LastCategoryFullName="Color.RGBA" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="RGBA (Join Vector3 Alpha)" />
+                    </p:NodeReference>
+                    <Pin Id="SsE2Zqz0Pe5OrZKRrodufM" Name="RGB" Kind="InputPin" />
+                    <Pin Id="RUmYtFJ7hSLM4osGDEQ1ms" Name="Alpha" Kind="InputPin" />
+                    <Pin Id="Hq6S4FplIvCLgcE16TAEeN" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="QzSicdBeaSKNz402cUcvpa" Ids="BlSguFqA1pLMTqT12Swt1j,SsE2Zqz0Pe5OrZKRrodufM" />
+                  <ControlPoint Id="O3Acqfs5emEOWq0sd0fJRM" Bounds="1059,927" />
+                  <Link Id="U4u68NHZR97LKB4tyGvxB9" Ids="O3Acqfs5emEOWq0sd0fJRM,RUmYtFJ7hSLM4osGDEQ1ms" />
+                  <Pin Id="Ib6hsNFeja2MpiRQGyvIN3" Name="Alpha" Kind="InputPin" Bounds="1080,934">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="JR9aUQuZveoOgTIjgwadqg" Ids="Ib6hsNFeja2MpiRQGyvIN3,O3Acqfs5emEOWq0sd0fJRM" IsHidden="true" />
+                  <ControlPoint Id="FxzQy8grBKuQdYOPJuPtds" Bounds="1015,987" />
+                  <Link Id="JznCSEsgEOQP2zDLOGkC3K" Ids="Hq6S4FplIvCLgcE16TAEeN,FxzQy8grBKuQdYOPJuPtds" />
+                  <Pin Id="EBhJBbXNmykOwiKRZDjRjZ" Name="Result" Kind="OutputPin" Bounds="1040,986">
+                    <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="RGBA" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="AVV8BRKfUh1LIpvp5BJCMt" Ids="FxzQy8grBKuQdYOPJuPtds,EBhJBbXNmykOwiKRZDjRjZ" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ FromRGBA ************************
+
+-->
+              <Node Name="FromRGBA" Bounds="1109,1212,90,135" Id="Et0rHCaWNEyM7WyKohOeco">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                </p:NodeReference>
+                <Patch Id="BIZdcqBLZo3LYp5SISVX2Q">
+                  <Pin Id="KCAMeHGElYDMc553Q22xDg" Name="Input" Kind="InputPin">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="RGBA" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <ControlPoint Id="Ru8QnHcchpaOh7IEYKJAWZ" Bounds="1123,1230" />
+                  <Link Id="BikgGHl5SszLaerMu0hvaJ" Ids="KCAMeHGElYDMc553Q22xDg,Ru8QnHcchpaOh7IEYKJAWZ" IsHidden="true" />
+                  <Node Bounds="1121,1280,45,26" Id="C5Lr4Ykh4j3Pyx7gblns3z">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.HSV" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="ClassType" Name="HSV" />
+                      <Choice Kind="OperationCallFlag" Name="Create" />
+                      <PinReference Kind="InputPin" Name="S" />
+                    </p:NodeReference>
+                    <Pin Id="U7ATu4hFujuNmmIKdmya7L" Name="H" Kind="InputPin" />
+                    <Pin Id="Lo6UgGl7jpONKJREx2gDC2" Name="S" Kind="InputPin" />
+                    <Pin Id="JEzsK2EE7GOPCpsEUUju53" Name="V" Kind="InputPin" />
+                    <Pin Id="HCRn9poPoQfLXTsaInCsUX" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Node Bounds="1121,1247,66,19" Id="TxjLUHbtxGvNIbLXUeaSOy">
+                    <p:NodeReference LastCategoryFullName="Color.RGBA" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="Category" Name="RGBA" />
+                      <Choice Kind="OperationCallFlag" Name="RGBA (Split)" />
+                    </p:NodeReference>
+                    <Pin Id="JRVGb3TySSoMkUV9UWrkXo" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="NDFhKijtwlNNKacyeaFvbA" Name="Red" Kind="OutputPin" />
+                    <Pin Id="IPpZoMIkJXyLx1gROeagj3" Name="Green" Kind="OutputPin" />
+                    <Pin Id="IPUu7UrNwQbM3YSUsFMTDc" Name="Blue" Kind="OutputPin" />
+                    <Pin Id="Fu8jSEA2ZMrOy0STtkRe8m" Name="Alpha" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="NuLtKhKWX2FP96t9sV8jwc" Ids="Ru8QnHcchpaOh7IEYKJAWZ,JRVGb3TySSoMkUV9UWrkXo" />
+                  <Link Id="NbULZFL9BaVOiAMDyULv1N" Ids="NDFhKijtwlNNKacyeaFvbA,U7ATu4hFujuNmmIKdmya7L" />
+                  <Link Id="JKsVZ8xPVM5PZ8nQo40gTI" Ids="IPpZoMIkJXyLx1gROeagj3,Lo6UgGl7jpONKJREx2gDC2" />
+                  <Link Id="DIEJh8i0XVZOjTYjMLWKPw" Ids="IPUu7UrNwQbM3YSUsFMTDc,JEzsK2EE7GOPCpsEUUju53" />
+                  <ControlPoint Id="H3mXihOXFuKOjrwAGs8qWX" Bounds="1123,1330" />
+                  <Link Id="UUA8pok2jgtM9DCTeRrmyI" Ids="HCRn9poPoQfLXTsaInCsUX,H3mXihOXFuKOjrwAGs8qWX" />
+                  <Pin Id="VDu6z7mEUmqP9cJJaJUEKN" Name="Output" Kind="OutputPin" Bounds="1124,1324" />
+                  <Link Id="L6iPZytQTl7PoNc9qWTHJg" Ids="H3mXihOXFuKOjrwAGs8qWX,VDu6z7mEUmqP9cJJaJUEKN" IsHidden="true" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="O1XzE6n2as3M2njC1pBov2" IsHidden="true">
+              <Fragment Id="KAhvDuaNaVOMcun9PTx9sn" Patch="Fhb4QtEiZmkLejOLsjIaZv" Enabled="true" />
+              <Fragment Id="Gls9mvE9ObTNERyBhdIF2F" Patch="KK0YkD6ZjFRPJ1dbZigD9r" />
+              <Fragment Id="VM9wufYVw11QI6Uzc15T1W" Patch="MvcNRSJR5P5MIhnSgxqrk2" />
+              <Fragment Id="EyLX2Uqv9sBQQCQlrHpSuV" Patch="TB2ehqtzDY6QP56B7jsmgn" />
+              <Fragment Id="IJIkDFQs90DOcuKdCPjkm6" Patch="CZrH3ebu18wO7tJx9tCxZu" />
+              <Fragment Id="Q0ZOsyBY3N5PT7IGWixBhx" Patch="PEXI9f4a1enP7vDOoFboaW" />
+              <Fragment Id="Q7pEnIozPelOMq2TCTX9Xu" Patch="R2BNiNjr82RPNG5ll6JeIF" />
+              <Fragment Id="EvyRmNfaD84LafqQAUDyKh" Patch="VssBKRRNwpZP4KjbpTSHPX" />
+              <Fragment Id="SgU8qkVE4ZvNoJ92D3txv4" Patch="E31FMCzY2gENk0UGHRlr4n" Enabled="true" />
+              <Fragment Id="JMlgCo5OD4ENKVKTTDuxZl" Patch="T8J4G1X40DsQNztzNvjbuf" />
+              <Fragment Id="T94ZIHoGW1tQY5qDGEDnAe" Patch="NA2Iz0WORgTP06fvKOc7zs" />
+              <Fragment Id="ShjpWteSo9zNA4Qyg8fxia" Patch="HEz3dprhcKkNjH7jG3Dhij" />
+              <Fragment Id="S2LVD2mF3PYNtSkhl0liY2" Patch="RaGQZGWpJCQOaG4qVHJQbv" />
+              <Fragment Id="FppgTxyhJm6NaQCzNHsaj6" Patch="DyDkq5Vu36ePH7ufbwNiUC" />
+              <Fragment Id="SdYaqFNetT6LpXWBmXB1GG" Patch="Et0rHCaWNEyM7WyKohOeco" />
+            </ProcessDefinition>
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ RGB ************************
+
+-->
+        <Node Name="RGB" Bounds="422,358" Id="MQPbzui3RdaMkUCdsY0Lq3">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="ColorBlender" LastSymbolSource="ColorBlender.dll">
+            <Choice Kind="TypeFlag" Name="RGB" />
+          </p:TypeAnnotation>
+          <Patch Id="K2zJDmuhQfuMXYFYuDih6C">
+            <Canvas Id="Lnr9o0zVz9xMEa5MhwFDXU" CanvasType="Group">
+              <!--
+
+    ************************ B ************************
+
+-->
+              <Node Name="B" Bounds="366,256,112,109" Id="SWU9Js0MV1BLISsMjhf6RE">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="FTLuJZWFN4yPJdZLIBAodN">
+                  <Node Bounds="378,279,10,10" AutoConnect="true" Id="RboR2z5jCAgP0Ro1YdnRM8">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.RGB" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="B" />
+                      <FullNameCategoryReference ID="ColorBlender.RGB" />
+                    </p:NodeReference>
+                    <Pin Id="IGgcKyks3BOLvnohmNuwRo" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Cnug2crhepyOE4S8tyZNpS" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="Riz7dPkHFNtNedRcugjhpN" Name="B" Kind="OutputPin" />
+                  </Node>
+                  <Pin Id="BkNtXo6z0JELhoERRPHf62" Name="Output" Kind="OutputPin" />
+                  <Pin Id="PHWm2r2pXsSOJjN3zyc7HH" Name="Input" Kind="InputPin" />
+                  <Node Bounds="404,315,62,19" Id="Q2yzPqOfwbYLz067zHpz3y">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat32" />
+                    </p:NodeReference>
+                    <Pin Id="KtW3uImS8a6LJXItHJ9ibo" Name="Input" Kind="InputPin" />
+                    <Pin Id="Fxl9jXeHJQ9LZAI05RGh3C" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="KBNf7sy0WXkMNXPgEFgvxz" Bounds="406,348" />
+                  <Pin Id="SdBDHcfAog6Nu2qFFIPDXO" Name="Result" Kind="OutputPin" Bounds="407,651" />
+                  <Link Id="LYTtKhLFr6gPDD03941pCZ" Ids="Fxl9jXeHJQ9LZAI05RGh3C,KBNf7sy0WXkMNXPgEFgvxz" />
+                  <Link Id="LgPbWLtQMhwMA57oi2TFi4" Ids="KBNf7sy0WXkMNXPgEFgvxz,SdBDHcfAog6Nu2qFFIPDXO" IsHidden="true" />
+                  <Link Id="Gmbsc2PNNVwNJJKhcSEISZ" Ids="Riz7dPkHFNtNedRcugjhpN,KtW3uImS8a6LJXItHJ9ibo" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ SetB ************************
+
+-->
+              <Node Name="SetB" Bounds="646,217,117,108" Id="KezEfEmkAHOLeyMs7my1j8">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="SzzdBcSuBBONRJkRmiHfFV">
+                  <Node Bounds="658,279,10,10" AutoConnect="true" Id="TqMmxFlwvM3LUC5B3BzKcT">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.RGB" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="SetB" />
+                      <FullNameCategoryReference ID="ColorBlender.RGB" />
+                    </p:NodeReference>
+                    <Pin Id="KaLw4YHgh27MHz5GrbG998" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="PCpyLcyXxkdNNhYOwiuh0g" Name="Value" Kind="InputPin" />
+                    <Pin Id="VfQ1Y58VqyPMh1D8a0snGe" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="HYkpspxkKYELAiPBKUHmHu" Name="Input" Kind="InputPin" />
+                  <Pin Id="TWCgtXt5iFnQYIhUZSk19A" Name="Output" Kind="OutputPin" />
+                  <Node Bounds="689,251,62,19" Id="UhJxQOl1eBxPMpv37Nck77">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat64" />
+                    </p:NodeReference>
+                    <Pin Id="LPYrrj6TxfbLkhPxObHBjq" Name="Input" Kind="InputPin" />
+                    <Pin Id="El4tbYgggjNPJ9PFF9t36p" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="G7p195esMICLGxJ1xdjUkS" Bounds="691,235" />
+                  <Pin Id="R2WlDSsZTMhP5g9sndktOD" Name="R" Kind="InputPin" Bounds="704,597">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="HFdNjJfOhhsP2Ete1BqvWc" Ids="G7p195esMICLGxJ1xdjUkS,LPYrrj6TxfbLkhPxObHBjq" />
+                  <Link Id="VoTtqPUV2sTLr8RnmrpIQX" Ids="R2WlDSsZTMhP5g9sndktOD,G7p195esMICLGxJ1xdjUkS" IsHidden="true" />
+                  <Link Id="AXwbE1lqVZJQWmSMeKpV3m" Ids="El4tbYgggjNPJ9PFF9t36p,PCpyLcyXxkdNNhYOwiuh0g" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ G ************************
+
+-->
+              <Node Name="G" Bounds="366,406,112,106" Id="UgC5MEP7pnWLFT1d3Cb7wA">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="PKzrARYSkixQderRzVPl69">
+                  <Node Bounds="378,429,10,10" AutoConnect="true" Id="I5ucJ82UiqOMhHomWiHTZA">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.RGB" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="G" />
+                      <FullNameCategoryReference ID="ColorBlender.RGB" />
+                    </p:NodeReference>
+                    <Pin Id="CpnE8ywYSQkLIWV4JqaPe4" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="SbPhKoL4T6BOI7YZe7Dd6v" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="DYozCXd6XPoNLyINq44d08" Name="G" Kind="OutputPin" />
+                  </Node>
+                  <Pin Id="FHkdXqiuTBNPEWCQ7QK7Uc" Name="Output" Kind="OutputPin" />
+                  <Pin Id="DvcsydNAdI1Op3a41vOe5H" Name="Input" Kind="InputPin" />
+                  <Node Bounds="404,462,62,19" Id="UzwtF0DNCE5Pt4vTfs9irA">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat32" />
+                    </p:NodeReference>
+                    <Pin Id="ULUpajfGJ0mPFavijz83WX" Name="Input" Kind="InputPin" />
+                    <Pin Id="ARNLt189twDOGr80TxuZWz" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="FKVnTQY2bobQKGFQ1PTmtp" Bounds="406,495" />
+                  <Pin Id="B2cdYHMBRwINyigXthxW1g" Name="Result" Kind="OutputPin" Bounds="407,651" />
+                  <Link Id="JqL78yc9JhJN5p2GKNa5Xv" Ids="ARNLt189twDOGr80TxuZWz,FKVnTQY2bobQKGFQ1PTmtp" />
+                  <Link Id="PxYNOLL28f6PyZorVccSth" Ids="FKVnTQY2bobQKGFQ1PTmtp,B2cdYHMBRwINyigXthxW1g" IsHidden="true" />
+                  <Link Id="CZB2D4FCrGiLbFAywbvTRA" Ids="DYozCXd6XPoNLyINq44d08,ULUpajfGJ0mPFavijz83WX" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ SetG ************************
+
+-->
+              <Node Name="SetG" Bounds="646,397,118,108" Id="HyOlqXlluiIQXaN6yRtXYQ">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="CeDOfgvvxqfP3TVL05vYEI">
+                  <Node Bounds="658,459,37,26" AutoConnect="true" Id="VfZONOfxz4JM4n6DkzJtsA">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.RGB" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="SetG" />
+                      <FullNameCategoryReference ID="ColorBlender.RGB" />
+                    </p:NodeReference>
+                    <Pin Id="TpGWWchMSBTQVsaQF4xobW" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="MVTXm52pdYJOmaT9qbOax8" Name="Value" Kind="InputPin" />
+                    <Pin Id="Rxgm7sTZqMRLHQSUVdJBAk" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="VztH7ebuOyzPLKdXayssDl" Name="Output" Kind="OutputPin" />
+                  <Pin Id="T5SJadnAhUeLsP7lwCfbA6" Name="Input" Kind="InputPin" />
+                  <Node Bounds="690,431,62,19" Id="VxaBi7MShxTQZuuZcg03Wx">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat64" />
+                    </p:NodeReference>
+                    <Pin Id="I4WZHBhFAZuMmOQDxGptoA" Name="Input" Kind="InputPin" />
+                    <Pin Id="VjQo7D0o5hHNpC6lqhPpUI" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="Rgapmet0F0nQDP20VqZsu6" Bounds="692,415" />
+                  <Pin Id="KmjdCeCf0EaLRIoxrw46AQ" Name="G" Kind="InputPin" Bounds="704,597">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="NxkXqDUXgKvMHLV9Yykns8" Ids="Rgapmet0F0nQDP20VqZsu6,I4WZHBhFAZuMmOQDxGptoA" />
+                  <Link Id="FDbdns34jNtLEFCdPM8BEI" Ids="KmjdCeCf0EaLRIoxrw46AQ,Rgapmet0F0nQDP20VqZsu6" IsHidden="true" />
+                  <Link Id="PPkV5Ett6oIPYq1zI864bd" Ids="VjQo7D0o5hHNpC6lqhPpUI,MVTXm52pdYJOmaT9qbOax8" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ R ************************
+
+-->
+              <Node Name="R" Bounds="366,556,112,110" Id="U0Dk9QGCZN1PHHTjrtbTNu">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="OHcohB2Ww0YQHcIS7eT4xz">
+                  <Node Bounds="378,579,10,10" AutoConnect="true" Id="OEp6WVaN6BQNW5GldnAXGa">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.RGB" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="R" />
+                      <FullNameCategoryReference ID="ColorBlender.RGB" />
+                    </p:NodeReference>
+                    <Pin Id="BDVWUhTPJKjLQnIGpxs1Q3" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="R3siPdM2i8BN6EusHSafnD" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="NMPb0vggg2SPcKJvOjeBfK" Name="R" Kind="OutputPin" />
+                  </Node>
+                  <Pin Id="MyPKM3zKRINLOmgQZkgJia" Name="Input" Kind="InputPin" />
+                  <Pin Id="OQ42ODkD2VZOAQo4N32p1a" Name="Output" Kind="OutputPin" />
+                  <Node Bounds="404,616,62,19" Id="CTqNPUIjG55LhUZJM76wXj">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat32" />
+                    </p:NodeReference>
+                    <Pin Id="HHEuv7LIzsJNYrl50nMtrT" Name="Input" Kind="InputPin" />
+                    <Pin Id="SAiMBOWEjpOMiE2gMLb7Du" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="ELamGAxf39HOrUXixNLY9S" Ids="NMPb0vggg2SPcKJvOjeBfK,HHEuv7LIzsJNYrl50nMtrT" />
+                  <ControlPoint Id="OJFr8Zjl5IRQLcnu8aOIYv" Bounds="406,649" />
+                  <Link Id="TtDWUWPCOpHLyylGOtdDbY" Ids="SAiMBOWEjpOMiE2gMLb7Du,OJFr8Zjl5IRQLcnu8aOIYv" />
+                  <Pin Id="D3KtMucd6PoN5wiUvpk4po" Name="Result" Kind="OutputPin" Bounds="407,651" />
+                  <Link Id="FnEyT7ZrohLObF6x7NcNkb" Ids="OJFr8Zjl5IRQLcnu8aOIYv,D3KtMucd6PoN5wiUvpk4po" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ SetR ************************
+
+-->
+              <Node Name="SetR" Bounds="651,576,117,108" Id="FluwIrHQuABL2wO2r9JwGP">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="MzA00bpCuaqNhnH5EdECWj">
+                  <Node Bounds="663,638,36,26" AutoConnect="true" Id="Swxwc7xzOQXMxxuP9hpXRf">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.RGB" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="SetR" />
+                      <FullNameCategoryReference ID="ColorBlender.RGB" />
+                    </p:NodeReference>
+                    <Pin Id="C7GX4JQGgS7Mz9lC4d8osU" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="ALFQey1wdLZLFkAVGiOBSY" Name="Value" Kind="InputPin" />
+                    <Pin Id="HaaHvKGgMDCOeJV0yxRT2X" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="J4Vi3ObRw7VPI1cUEpE15W" Name="Output" Kind="OutputPin" />
+                  <Pin Id="OxjALpiBugYPjEzLI8RsFN" Name="Input" Kind="InputPin" />
+                  <Node Bounds="694,610,62,19" Id="SHiCIU5eClqNYz3fhsjjAz">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat64" />
+                    </p:NodeReference>
+                    <Pin Id="DYXb3xG3pQBMvAwfdQIRZi" Name="Input" Kind="InputPin" />
+                    <Pin Id="Apat7ohVmMaLOgfT1GnjlA" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="VctFAhNjGMuPfxyVyokRSE" Ids="Apat7ohVmMaLOgfT1GnjlA,ALFQey1wdLZLFkAVGiOBSY" />
+                  <ControlPoint Id="Nrtc2c65Dm1La3cj3ZiD9y" Bounds="696,594" />
+                  <Link Id="TLFrHYtwb25P2MSIQJSHmr" Ids="Nrtc2c65Dm1La3cj3ZiD9y,DYXb3xG3pQBMvAwfdQIRZi" />
+                  <Pin Id="HXWi30Q85QpMX6BpDltjlH" Name="B" Kind="InputPin" Bounds="704,597">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="AAKE4FAEAxlOjBoZUplryR" Ids="HXWi30Q85QpMX6BpDltjlH,Nrtc2c65Dm1La3cj3ZiD9y" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Create ************************
+
+-->
+              <Node Name="Create" Bounds="351,822,100,50" Id="KsHl2X2D592OKAMmdWkLiv">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="RdFXHD3ilerNJy2JiX2tI3">
+                  <Node Bounds="351,822,10,10" AutoConnect="true" Id="NSCldgt6m9uMA12mh0R3Vi">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.RGB" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.RGB" />
+                    </p:NodeReference>
+                    <Pin Id="KPyB6wYSY5nLsZCkknGXxK" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="M78bcDcm2kEOMLhqLvEBwE" Name="Output" Kind="OutputPin" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Create ************************
+
+-->
+              <Node Name="Create" Bounds="631,822,100,50" Id="CArwraydLmuPiODc3ag7H5">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="IWl4CUWBg3hQcFeDXxjcuk">
+                  <Node Bounds="631,822,10,10" AutoConnect="true" Id="VzaVbGtdtEwNpbRZ4vzD8o">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.RGB" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.RGB" />
+                      <PinReference Kind="InputPin" Name="Rg" />
+                    </p:NodeReference>
+                    <Pin Id="KOChoUw5SXyLjExB6fdgDv" Name="Rg" Kind="InputPin" />
+                    <Pin Id="QVgfgEUaW3sMgOaXUG6ePV" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="AU3oJ8TFGm1P39l9MNqb88" Name="Output" Kind="OutputPin" />
+                  <Pin Id="AM0p5lh8Y4BLqyN9dgRDt0" Name="Rg" Kind="InputPin" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Create ************************
+
+-->
+              <Node Name="Create" Bounds="351,972,100,50" Id="ACBY2n015JCMTLqo3IshQX">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="O0M5LoRTIvNPEMsVSa3qCq">
+                  <Node Bounds="351,972,10,10" AutoConnect="true" Id="LkcK8MtSmIFLN6KcEbAfFU">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.RGB" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.RGB" />
+                      <PinReference Kind="InputPin" Name="Hs" />
+                    </p:NodeReference>
+                    <Pin Id="M8748bEF1gAMvaOjT2vHFF" Name="Hs" Kind="InputPin" />
+                    <Pin Id="U1XZ8aCHrrLLpQsNIWyTvJ" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="I44mwDaP14WLQftpTfi2jx" Name="Output" Kind="OutputPin" />
+                  <Pin Id="OKFhvw0scC4MuCykgn7XwQ" Name="Hs" Kind="InputPin" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Create ************************
+
+-->
+              <Node Name="Create" Bounds="629,954,127,224" Id="C8JA8DHvaJbO0C3SObXqvM">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="ESbJFI7VfUqPlG9F353Sxr">
+                  <Node Bounds="641,1132,46,26" AutoConnect="true" Id="LGFpR6UdMiHOXKMRlUVO93">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.RGB" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.RGB" />
+                      <PinReference Kind="InputPin" Name="R" />
+                    </p:NodeReference>
+                    <Pin Id="Q1vS53w1eMuLcMPwdB8obQ" Name="R" Kind="InputPin" />
+                    <Pin Id="Jvx5Q5BabRlNXs0aJh4Hgm" Name="G" Kind="InputPin" />
+                    <Pin Id="Hz1GwzShnEBNR3lGqveq9O" Name="B" Kind="InputPin" />
+                    <Pin Id="QEpjg6VOFxwOm93Dwgi2kf" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="UEiPQ0FbnySNyLQ5FNUL7N" Name="Output" Kind="OutputPin" />
+                  <Node Bounds="682,1084,62,19" Id="AzoxNnelHbFNMf1UxkTDRG">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat32" />
+                    </p:NodeReference>
+                    <Pin Id="T6KVXlengjNQFW3s92uj1T" Name="Input" Kind="InputPin" />
+                    <Pin Id="BtZvaFMkzvgOj2IqaCKkL4" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="NP3gAcocr7xNhhiFqq1TXo" Bounds="684,1070" />
+                  <Pin Id="BOoIvg5aDLPMxCmq4rAtuV" Name="B" Kind="InputPin" Bounds="780,976">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Node Bounds="662,1040,62,19" Id="MdCRYoQHq7SNBfsreq4dpG">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat32" />
+                    </p:NodeReference>
+                    <Pin Id="O4ILNT7vbZ9QV3yS4388mx" Name="Input" Kind="InputPin" />
+                    <Pin Id="VpJriUXD9OWLuG4BQaSNvu" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="IcYWj3JnlnPNp9Rp96rHGQ" Bounds="664,1026" />
+                  <Pin Id="BmJRVQTAxCeLGtrSSQ6Rya" Name="G" Kind="InputPin">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Node Bounds="641,986,62,19" Id="KUAfR3qPBRdOEIQnEBb5Sw">
+                    <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="ToFloat32" />
+                    </p:NodeReference>
+                    <Pin Id="Hdv8TVcsW7rLxxgp7OHiRP" Name="Input" Kind="InputPin" />
+                    <Pin Id="UrFh93ThKEeN1C12NYq0qr" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="SwovtKs57kxO6EpPOsn96h" Bounds="643,972" />
+                  <Pin Id="Dwb4e44QXOJOcuJKQPH1Ac" Name="R" Kind="InputPin">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="OBHV3BBAEhCP99Zw9Ac1iK" Ids="NP3gAcocr7xNhhiFqq1TXo,T6KVXlengjNQFW3s92uj1T" />
+                  <Link Id="LgCmhpXdJCBOSPuSILoPTh" Ids="BOoIvg5aDLPMxCmq4rAtuV,NP3gAcocr7xNhhiFqq1TXo" IsHidden="true" />
+                  <Link Id="TsCSzgW2SfMLqK5aYEMNRc" Ids="IcYWj3JnlnPNp9Rp96rHGQ,O4ILNT7vbZ9QV3yS4388mx" />
+                  <Link Id="HDSxX5k6mlrN2a3gLsckUX" Ids="BmJRVQTAxCeLGtrSSQ6Rya,IcYWj3JnlnPNp9Rp96rHGQ" IsHidden="true" />
+                  <Link Id="LxtFF63kDvHLZqkXDeLKJD" Ids="SwovtKs57kxO6EpPOsn96h,Hdv8TVcsW7rLxxgp7OHiRP" />
+                  <Link Id="NEzkVCKesYaN0UuVRib2CL" Ids="Dwb4e44QXOJOcuJKQPH1Ac,SwovtKs57kxO6EpPOsn96h" IsHidden="true" />
+                  <Link Id="RcitA5uE9l2QHGHOvzrGQx" Ids="UrFh93ThKEeN1C12NYq0qr,Q1vS53w1eMuLcMPwdB8obQ" />
+                  <Link Id="JSUwAxIgBH1O3Xv7NpI9jT" Ids="VpJriUXD9OWLuG4BQaSNvu,Jvx5Q5BabRlNXs0aJh4Hgm" />
+                  <Link Id="P9ov5UytfDXOPah4wzOvgv" Ids="BtZvaFMkzvgOj2IqaCKkL4,Hz1GwzShnEBNR3lGqveq9O" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ ToHSV ************************
+
+-->
+              <Node Name="ToHSV" Bounds="351,1122,100,50" Id="SLFMwTfoNLVPvwAzRclGo9">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="RPvyVMUvZWINf7LyjE9qEa">
+                  <Node Bounds="351,1122,10,10" AutoConnect="true" Id="Aby1OufSqxoLlAxg7vt7YQ">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.RGB" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="ToHSV" />
+                      <FullNameCategoryReference ID="ColorBlender.RGB" />
+                    </p:NodeReference>
+                    <Pin Id="Edq0uZUVLI6MpYv8npLif7" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="QXKNxSaHfUFPG2oat64DAe" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="QPSQ5T6OzmyMihlWzhnfYj" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Pin Id="SknsMmsgNdJN52OHa11qil" Name="Result" Kind="OutputPin" />
+                  <Pin Id="OwTZSdRZInIQCyPRGLwq3v" Name="Input" Kind="InputPin" />
+                  <Pin Id="Jb9xOgrwqGCNsrfa8qfJKT" Name="Output" Kind="OutputPin" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ ToRGBA ************************
+
+-->
+              <Node Name="ToRGBA" Bounds="919,847,115,150" Id="UObUHVBRUmZQJ3M4HeAOW9">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                </p:NodeReference>
+                <Patch Id="FmjqjVNW0mJPiTOqWSJcV5">
+                  <Pin Id="H59OVima0xEN8yWsYHRwQ8" Name="Input" Kind="InputPin">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="RGB" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <ControlPoint Id="CwWcnWmYBbVNjofbmLIHPf" Bounds="933,865" />
+                  <Link Id="IoMgvrw8xMVQX7sSfbauxS" Ids="H59OVima0xEN8yWsYHRwQ8,CwWcnWmYBbVNjofbmLIHPf" IsHidden="true" />
+                  <ControlPoint Id="F7iCEQW48C6LVIg7w2Huxi" Bounds="985,899" />
+                  <Pin Id="Pq99MJZoJBzLf7Zw6uogIC" Name="Alpha" Kind="InputPin" Bounds="995,919" DefaultValue="1">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Float32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="Mwa0cgx08s5LAjanryLtas" Ids="Pq99MJZoJBzLf7Zw6uogIC,F7iCEQW48C6LVIg7w2Huxi" IsHidden="true" />
+                  <Node Bounds="931,933,41,19" Id="CtB2wQDMfQXNFPR7PBVUS7">
+                    <p:NodeReference LastCategoryFullName="Color.RGBA" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="RGBA (Join Vector3 Alpha)" />
+                    </p:NodeReference>
+                    <Pin Id="T2F90tOoOjaM96InJjnDkq" Name="RGB" Kind="InputPin" />
+                    <Pin Id="OIFlWkvZ94XLnQiDTVR8cx" Name="Alpha" Kind="InputPin" />
+                    <Pin Id="U8wtGamWoyUOqCmeMgQiHD" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="VzeZSah4CNFLtzgFhXdHkt" Ids="F7iCEQW48C6LVIg7w2Huxi,OIFlWkvZ94XLnQiDTVR8cx" />
+                  <Node Bounds="931,892,36,19" Id="DwmRgxI11uXN2c6nSjpgah">
+                    <p:NodeReference LastCategoryFullName="Color.ColorBlender.RGB" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Split (Vector)" />
+                      <CategoryReference Kind="ClassType" Name="RGB" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="KT7kUA9qgmUNF4RJdQh4e9" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="JP7mmVmdL0kPeZ5shdQMF3" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Link Id="MkEsvqbqdgzMBRt7mAljV4" Ids="CwWcnWmYBbVNjofbmLIHPf,KT7kUA9qgmUNF4RJdQh4e9" />
+                  <Link Id="JJqn9DmE8TdNygWSlG8lTe" Ids="JP7mmVmdL0kPeZ5shdQMF3,T2F90tOoOjaM96InJjnDkq" />
+                  <ControlPoint Id="CQcre6jOFboMPgq1YMtEPM" Bounds="933,980" />
+                  <Link Id="T1vCkH1bolSNsBzPvqveLB" Ids="U8wtGamWoyUOqCmeMgQiHD,CQcre6jOFboMPgq1YMtEPM" />
+                  <Pin Id="RswMlFDULYcOSBupaIjbt1" Name="Result" Kind="OutputPin" Bounds="934,1003">
+                    <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="RGBA" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="AYzpQLFtOISPo81Liih5Jx" Ids="CQcre6jOFboMPgq1YMtEPM,RswMlFDULYcOSBupaIjbt1" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Split ************************
+
+-->
+              <Node Name="Split" Bounds="889,411,160,116" Id="TRR7SQrYqCwPBzohdwi7od">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                </p:NodeReference>
+                <Patch Id="K8i8ii3BktsOkVQi539fxw">
+                  <Node Bounds="901,462,31,26" Id="G1DWqQIavu8NNLWHPbr8dI">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.RGB" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="R" />
+                      <CategoryReference Kind="ClassType" Name="RGB" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="P1CsxQFQ2zAQKj3hj6J0ae" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="P4f5B6JpVI2NPXCujyhjZS" Name="Output" Kind="OutputPin" />
+                    <Pin Id="JZ1Br7CKjlSMiD9aTOU9JK" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="949,462,31,26" Id="HmuIrSh4vf5Med1APK2A8k">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.RGB" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="G" />
+                      <CategoryReference Kind="ClassType" Name="RGB" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="RvfDSzKIowCQDiyQ2AUupF" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="L8JC2KSbRGDN8lNqoDegOa" Name="Output" Kind="OutputPin" />
+                    <Pin Id="UQeKKfKFXw3P7hWyEEWXgX" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="992,462,31,26" Id="IJbi2bS355KO3f2654qK7P">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.RGB" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="B" />
+                      <CategoryReference Kind="ClassType" Name="RGB" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="H5aFLg9x5L1QSSVwQKSw4l" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="JHJEZwGyOtUPZgOyISX0SM" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="BO787YkuGbQNHxowyFHVTV" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="S92O2A9dXjEQPNaSTQU4OK" Bounds="903,429" />
+                  <Link Id="LkhdRY3cN0nPbGLKtGw6nh" Ids="S92O2A9dXjEQPNaSTQU4OK,P1CsxQFQ2zAQKj3hj6J0ae" />
+                  <Pin Id="N5mzOu51QopLrRybcIXK45" Name="Input" Kind="InputPin" Bounds="945,445" />
+                  <Link Id="Izus8qwQ1dtNGBun6DeNvy" Ids="N5mzOu51QopLrRybcIXK45,S92O2A9dXjEQPNaSTQU4OK" IsHidden="true" />
+                  <Link Id="DaDSWxJWC9zMTGaiYacRmK" Ids="S92O2A9dXjEQPNaSTQU4OK,RvfDSzKIowCQDiyQ2AUupF" />
+                  <Link Id="LfCVxnpAIC5PZdCWSPwfrG" Ids="S92O2A9dXjEQPNaSTQU4OK,H5aFLg9x5L1QSSVwQKSw4l" />
+                  <ControlPoint Id="LVEOm14tk4vO9e1utUVrxl" Bounds="929,509" />
+                  <Link Id="HpLjBwFqpcXL4PkD7qB6h6" Ids="JZ1Br7CKjlSMiD9aTOU9JK,LVEOm14tk4vO9e1utUVrxl" />
+                  <Pin Id="R3wHw52jx1DMYmqu4cmBBs" Name="R" Kind="OutputPin" Bounds="924,516" />
+                  <Link Id="Gz1ink4yeXLM5yPT7yVhGr" Ids="LVEOm14tk4vO9e1utUVrxl,R3wHw52jx1DMYmqu4cmBBs" IsHidden="true" />
+                  <ControlPoint Id="Q5Hp2BAho49MVs8dxWPqnH" Bounds="977,510" />
+                  <Link Id="AgbNtbqG7rgOcaUm5jI1Tx" Ids="UQeKKfKFXw3P7hWyEEWXgX,Q5Hp2BAho49MVs8dxWPqnH" />
+                  <Pin Id="TdkYLajHxc8NfgOGhJVRIg" Name="G" Kind="OutputPin" Bounds="974,510" />
+                  <Link Id="USqpYsgjUtlMIr75XihlIE" Ids="Q5Hp2BAho49MVs8dxWPqnH,TdkYLajHxc8NfgOGhJVRIg" IsHidden="true" />
+                  <ControlPoint Id="KKKITlKGPWkQVpFgonqwdc" Bounds="1020,510" />
+                  <Link Id="ErOrKelAtYsLs1A4FiV8pQ" Ids="BO787YkuGbQNHxowyFHVTV,KKKITlKGPWkQVpFgonqwdc" />
+                  <Pin Id="OGEvYk8m1knLJsrOs0U5to" Name="B" Kind="OutputPin" Bounds="1020,511" />
+                  <Link Id="GFEeSj2mmWQMah3g32LOHB" Ids="KKKITlKGPWkQVpFgonqwdc,OGEvYk8m1knLJsrOs0U5to" IsHidden="true" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Split (Vector) ************************
+
+-->
+              <Node Name="Split (Vector)" Bounds="908,614,146,152" Id="EDFa6BSoRcAPLcXZ6YlK62">
+                <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                </p:NodeReference>
+                <Patch Id="F8pYgOuleswOi2rudX4u8T">
+                  <Node Bounds="920,665,31,26" Id="Jihn8Jki55HMKsWNOeMSxO">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.RGB" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="R" />
+                      <CategoryReference Kind="ClassType" Name="RGB" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="KkXGIQxCSYtLSVxUApjGSp" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Lk62rbJHnIBPLvaH5PrSbU" Name="Output" Kind="OutputPin" />
+                    <Pin Id="Lc8cWDAZLsVPGh6zJeAK7K" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="968,665,31,26" Id="S703ZZP0AqyLVCNg1AcLIL">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.RGB" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="G" />
+                      <CategoryReference Kind="ClassType" Name="RGB" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="PArsWzctrdkLVMMpEr4jjb" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="EDF1BaMdrmSMpvqr8CoLdQ" Name="Output" Kind="OutputPin" />
+                    <Pin Id="FJjyeWYpB7HNnn4d4Dho1x" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Node Bounds="1011,665,31,26" Id="F5IfbvUcgEMNtD19C4xhlU">
+                    <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.RGB" LastSymbolSource="VL.ColorBlender.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="B" />
+                      <CategoryReference Kind="ClassType" Name="RGB" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="SxVHz6cV1aSLhItlzcS5vz" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Neg7JtTum0yOOccSFtkziE" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="UxpPPpHSV9yNnNX51DlsqY" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <ControlPoint Id="MYlAFBeUcWpLLHB0xxc1gj" Bounds="922,632" />
+                  <Link Id="IiEuR2cAFxSPviWkF13IR2" Ids="MYlAFBeUcWpLLHB0xxc1gj,KkXGIQxCSYtLSVxUApjGSp" />
+                  <Pin Id="Uiw4U024lOpNHxnASsdqMG" Name="Input" Kind="InputPin" Bounds="945,445" />
+                  <Link Id="NoEk4GLVpFeN5bFsz2HSlz" Ids="Uiw4U024lOpNHxnASsdqMG,MYlAFBeUcWpLLHB0xxc1gj" IsHidden="true" />
+                  <Link Id="BBhfCyEJ18yLTbnckOwoe5" Ids="MYlAFBeUcWpLLHB0xxc1gj,PArsWzctrdkLVMMpEr4jjb" />
+                  <Link Id="MtxkkJUHv8eNIooQfnOc3h" Ids="MYlAFBeUcWpLLHB0xxc1gj,SxVHz6cV1aSLhItlzcS5vz" />
+                  <Node Bounds="973,711,46,19" Id="EMZduX1z4S5PQ5J9EQh8xL">
+                    <p:NodeReference LastCategoryFullName="3D.Vector3" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="Vector (Join)" />
+                      <CategoryReference Kind="Vector3Type" Name="Vector3" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="Bce58TU8M8NLeTWYUYplEs" Name="X" Kind="InputPin" />
+                    <Pin Id="TxcyFWhsyV8OOzDK8gLlH3" Name="Y" Kind="InputPin" />
+                    <Pin Id="JzJY2Y8JjkGOKKw7QF2FlA" Name="Z" Kind="InputPin" />
+                    <Pin Id="G8FDLD9iRqzP2mzGok9mwg" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Link Id="IOv9HseD71BNbbC4XtDCmN" Ids="Lc8cWDAZLsVPGh6zJeAK7K,Bce58TU8M8NLeTWYUYplEs" />
+                  <Link Id="O7d3jlVLJjXMZxQjEHtRok" Ids="FJjyeWYpB7HNnn4d4Dho1x,TxcyFWhsyV8OOzDK8gLlH3" />
+                  <Link Id="GUqNrMSQVz8Pk82vQBYxD6" Ids="UxpPPpHSV9yNnNX51DlsqY,JzJY2Y8JjkGOKKw7QF2FlA" />
+                  <ControlPoint Id="Nhyfu6shvU7MoljSBtSbm8" Bounds="975,749" />
+                  <Link Id="LghRnS9wC5cLLrkZIPn0R0" Ids="G8FDLD9iRqzP2mzGok9mwg,Nhyfu6shvU7MoljSBtSbm8" />
+                  <Pin Id="N9qL6tEVThIOuRwu1dXrva" Name="Output" Kind="OutputPin" Bounds="976,749" />
+                  <Link Id="QXnFNoF8UDNQBsOimEs5NF" Ids="Nhyfu6shvU7MoljSBtSbm8,N9qL6tEVThIOuRwu1dXrva" IsHidden="true" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="KOZaudsbh1rPLXzXHFYgvP" IsHidden="true">
+              <Fragment Id="SxXFfOex4rjLrnrYjVvCwW" Patch="ACBY2n015JCMTLqo3IshQX" Enabled="true" />
+              <Fragment Id="HMCiEKxSM06MqJ0nJynROv" Patch="KezEfEmkAHOLeyMs7my1j8" />
+              <Fragment Id="Nw1LDyKEdFdO3FXyoj2U3q" Patch="UgC5MEP7pnWLFT1d3Cb7wA" />
+              <Fragment Id="DAG7F9rKdFkLh881a2TR9x" Patch="HyOlqXlluiIQXaN6yRtXYQ" />
+              <Fragment Id="QpeaGaLzqRlLUmVA2fFXYZ" Patch="U0Dk9QGCZN1PHHTjrtbTNu" />
+              <Fragment Id="IrZnpy6dcr5QTKFzRxSPFS" Patch="FluwIrHQuABL2wO2r9JwGP" />
+              <Fragment Id="UEc1JL7lNyUM0lfPgbnuep" Patch="KsHl2X2D592OKAMmdWkLiv" />
+              <Fragment Id="AinUPm1BDtLLtxX2IBgIbK" Patch="CArwraydLmuPiODc3ag7H5" />
+              <Fragment Id="H5K3Efatxn7OGUZ7RtGQpL" Patch="C8JA8DHvaJbO0C3SObXqvM" Enabled="true" />
+              <Fragment Id="K7MYDJbAXvyNUb0UvJatnL" Patch="SWU9Js0MV1BLISsMjhf6RE" />
+              <Fragment Id="TJCwNNO2VVUP2Vgx3R2oDY" Patch="SLFMwTfoNLVPvwAzRclGo9" />
+              <Fragment Id="OgaU1EzN7HpQcOEBgB2rX4" Patch="UObUHVBRUmZQJ3M4HeAOW9" />
+              <Fragment Id="JrDEiCu1ADXMbSZnq2jvTv" Patch="TRR7SQrYqCwPBzohdwi7od" />
+              <Fragment Id="CWJPcaP421rOhFMriV58m2" Patch="EDFa6BSoRcAPLcXZ6YlK62" />
+            </ProcessDefinition>
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Blend ************************
+
+-->
+        <Node Name="Blend" Bounds="422,414" Id="RpcwdgSXD4LPoCxZedAC8B">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="ColorBlender" LastSymbolSource="ColorBlender.dll">
+            <Choice Kind="TypeFlag" Name="Blend" />
+          </p:TypeAnnotation>
+          <Patch Id="HtR11sWnnZwMinCkwwW3Yi">
+            <Canvas Id="GiSEZNKMgDyPBfsB9YvoBK" CanvasType="Group">
+              <!--
+
+    ************************ Colors ************************
+
+-->
+              <Node Name="Colors" Bounds="408,265,159,224" Id="SbYPQv7KgsgPMZ9sxRFh5e">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="Mvymm1IKifzNkcMbV8NEnL">
+                  <Node Bounds="431,288,46,26" AutoConnect="true" Id="LK3oVAqoCGnPl7rAkNyM7B">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Blend" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Colors" />
+                      <FullNameCategoryReference ID="ColorBlender.Blend" />
+                    </p:NodeReference>
+                    <Pin Id="CLIsbHHGfj0NCJiAhA6l58" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="FP4At4UicOLQJLJqazln3I" Name="Output" Kind="StateOutputPin" />
+                    <Pin Id="K0hvaYJDXWnOcS23V5oqME" Name="Colors" Kind="OutputPin" />
+                  </Node>
+                  <Pin Id="VQozuDKCFMcNmb6HOVB7JI" Name="Output" Kind="OutputPin" />
+                  <Pin Id="S72MQbINocrOri4F2PVnhF" Name="Input" Kind="InputPin" />
+                  <Node Bounds="472,327,83,26" Id="HJfsWp1kQe0MT1eBUHsEOk">
+                    <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                      <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
+                    </p:NodeReference>
+                    <Pin Id="ELFwY2uy8oRNnBwJM0ck9e" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="Ey0ZuEMTXBBLE3OJ5kFf2U" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="Sj6FeCmG0bFMJTQ2kzPlRt" Ids="K0hvaYJDXWnOcS23V5oqME,ELFwY2uy8oRNnBwJM0ck9e" />
+                  <ControlPoint Id="OJtvlyMK8F1NVrGFok2OL0" Bounds="474,472" />
+                  <Pin Id="N0DrZeJQbDMOmXOo50knii" Name="Result" Kind="OutputPin" Bounds="476,365">
+                    <p:TypeAnnotation LastCategoryFullName="Collections" LastSymbolSource="VL.Collections.vl">
+                      <Choice Kind="TypeFlag" Name="Spread" />
+                      <p:TypeArguments>
+                        <TypeReference LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+                          <Choice Kind="TypeFlag" Name="RGBA" />
+                        </TypeReference>
+                      </p:TypeArguments>
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Link Id="S7X2BZijFc9OTQFWmIu3YD" Ids="OJtvlyMK8F1NVrGFok2OL0,N0DrZeJQbDMOmXOo50knii" IsHidden="true" />
+                  <Node Bounds="460,376,77,72" Id="HTyFHIBc5xbO08JIpaa5dy">
+                    <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                      <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                      <CategoryReference Kind="Category" Name="Primitive" />
+                    </p:NodeReference>
+                    <Pin Id="Gfb28hzpKaNMpTGsEIzqfB" Name="Break" Kind="OutputPin" />
+                    <Patch Id="GNzid9P7ktWQGgT3ADdhiK" ManuallySortedPins="true">
+                      <Patch Id="U76x1BavXM8PM2kjkp0xpT" Name="Create" ManuallySortedPins="true" />
+                      <Patch Id="N4dbIMErQx7LW7iDXKARkH" Name="Update" ManuallySortedPins="true" />
+                      <Patch Id="JjvhxoTlJzALskQPi1NPZh" Name="Dispose" ManuallySortedPins="true" />
+                      <Node Bounds="472,405,53,19" Id="B3eC5HbameqNFo2L5A6DWp">
+                        <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.HSV" LastSymbolSource="VL.ColorBlender.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <Choice Kind="OperationCallFlag" Name="ToRGBA" />
+                          <CategoryReference Kind="ClassType" Name="HSV" NeedsToBeDirectParent="true" />
+                        </p:NodeReference>
+                        <Pin Id="L05SCGHAo3lMH2HtfLnI65" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="LAKilvinL07OJVfv3pc66J" Name="Alpha" Kind="InputPin" />
+                        <Pin Id="B4SjLHAuTIeM8wzHU5KIZS" Name="Result" Kind="OutputPin" />
+                      </Node>
+                    </Patch>
+                    <ControlPoint Id="OsChmWp7eDkPUzBqpig9Sf" Bounds="474,383" Alignment="Top" />
+                    <ControlPoint Id="VB9XuB5BOjxLr9rciOu4B0" Bounds="474,443" Alignment="Bottom" />
+                  </Node>
+                  <Link Id="OsLmIK757C8QQBNHWvJtdp" Ids="Ey0ZuEMTXBBLE3OJ5kFf2U,OsChmWp7eDkPUzBqpig9Sf" />
+                  <Link Id="QmG1pori2MgNJ5iTIaJKJS" Ids="OsChmWp7eDkPUzBqpig9Sf,L05SCGHAo3lMH2HtfLnI65" />
+                  <Link Id="RD0vjmDC0w3ND8bPrALd6E" Ids="B4SjLHAuTIeM8wzHU5KIZS,VB9XuB5BOjxLr9rciOu4B0" />
+                  <Link Id="QKtWiVeFLrVNXhIHqRNQYv" Ids="VB9XuB5BOjxLr9rciOu4B0,OJtvlyMK8F1NVrGFok2OL0" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ SetColors ************************
+
+-->
+              <Node Name="SetColors" Bounds="422,587,161,203" Id="JE4OTflqOlzN7dXhhG6vGm">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="G6TTvFP0T1xQD1Qqh1cT6I">
+                  <Node Bounds="434,744,59,26" AutoConnect="true" Id="AqmjH0MTdMFOa5VeY1ExZa">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Blend" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="SetColors" />
+                      <FullNameCategoryReference ID="ColorBlender.Blend" />
+                    </p:NodeReference>
+                    <Pin Id="MyfzhEXgbRTMzKKIzdlkeG" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="QIIyIJqea22M0eIXdA2eli" Name="Value" Kind="InputPin" />
+                    <Pin Id="HAdf4rVjVvzQCzry172KeY" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="IiiABLX9RCaL1KoKHmU19e" Name="Value" Kind="InputPin">
+                    <p:TypeAnnotation>
+                      <Choice Kind="TypeFlag" Name="Spread" />
+                      <p:TypeArguments>
+                        <TypeReference>
+                          <Choice Kind="TypeFlag" Name="RGBA" />
+                        </TypeReference>
+                      </p:TypeArguments>
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="RCIesydUhHiOrBtYha82Jt" Name="Output" Kind="OutputPin" />
+                  <ControlPoint Id="HBXvwzMwimpOdzizHGe0L0" Bounds="490,605" />
+                  <Pin Id="EC55HiD0HKzOgaIvLrelZF" Name="Input" Kind="InputPin" />
+                  <Link Id="ItoZYx5eu8EPrDtYkOrDg4" Ids="IiiABLX9RCaL1KoKHmU19e,HBXvwzMwimpOdzizHGe0L0" IsHidden="true" />
+                  <Node Bounds="476,623,88,62" Id="JnGg05ImXkLOW9wqPG9sxo">
+                    <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                      <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
+                      <CategoryReference Kind="Category" Name="Primitive" />
+                    </p:NodeReference>
+                    <Pin Id="DPIhdpvmhq5QZYW9BvFxRE" Name="Break" Kind="OutputPin" />
+                    <ControlPoint Id="MAlnHOlcecQNvY8CeZfk4W" Bounds="490,630" Alignment="Top" />
+                    <ControlPoint Id="MREMysySwk4OnsnfWzM6dc" Bounds="490,680" Alignment="Bottom" />
+                    <Patch Id="JqcPly0Svq1NTQ2URGWX3y" ManuallySortedPins="true">
+                      <Patch Id="PFymiTJS0aFLpQnUWRrWFd" Name="Create" ManuallySortedPins="true" />
+                      <Patch Id="GuQf37PycOwPPjicG3lzPQ" Name="Update" ManuallySortedPins="true" />
+                      <Patch Id="C5ksDD6IMaFNuISV5oyBjT" Name="Dispose" ManuallySortedPins="true" />
+                      <Node Bounds="488,646,64,19" Id="RcuQBz5mh31LmAR9H4yBv6">
+                        <p:NodeReference LastCategoryFullName="Color.ColorBlender.HSV" LastSymbolSource="VL.ColorBlender.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <Choice Kind="OperationCallFlag" Name="FromRGBA" />
+                        </p:NodeReference>
+                        <Pin Id="VoEOkoiAIxmOucCj6AjsK0" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="OJ6x5N1A1hGMpwQRYaB7EU" Name="Output" Kind="StateOutputPin" />
+                      </Node>
+                    </Patch>
+                  </Node>
+                  <Link Id="TrOA6hyoVsQLIok2Cfz0HI" Ids="HBXvwzMwimpOdzizHGe0L0,MAlnHOlcecQNvY8CeZfk4W" />
+                  <Link Id="Swe2tgEnRHOMIROBWE9jN6" Ids="MAlnHOlcecQNvY8CeZfk4W,VoEOkoiAIxmOucCj6AjsK0" />
+                  <Link Id="Pt5c2LIObjuPfXMmEVruuy" Ids="OJ6x5N1A1hGMpwQRYaB7EU,MREMysySwk4OnsnfWzM6dc" />
+                  <Node Bounds="488,703,83,26" Id="Q4ifnV5Ok1mNG6XF4P6VYT">
+                    <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <CategoryReference Kind="ArrayType" Name="MutableArray" />
+                      <Choice Kind="OperationCallFlag" Name="FromSequence" />
+                    </p:NodeReference>
+                    <Pin Id="T3CYtvqRQGhOC3tDTcd5mM" Name="Input" Kind="StateInputPin" />
+                    <Pin Id="NpfJOP9K4PkM4AFSEkyBpF" Name="Result" Kind="OutputPin" />
+                  </Node>
+                  <Link Id="Mc5Dl7JJ7XhQRldVxENCrQ" Ids="MREMysySwk4OnsnfWzM6dc,T3CYtvqRQGhOC3tDTcd5mM" />
+                  <Link Id="GPvPKuanMBtNW4XtcYTbBt" Ids="NpfJOP9K4PkM4AFSEkyBpF,QIIyIJqea22M0eIXdA2eli" />
+                </Patch>
+              </Node>
+              <!--
+
+    ************************ Create ************************
+
+-->
+              <Node Name="Create" Bounds="648,255,122,80" Id="FUgmFg9rlMWOb3Xs8W1E0q">
+                <p:NodeReference>
+                  <Choice Kind="OperationDefinition" Name="Operation" />
+                  <FullNameCategoryReference ID="Primitive" />
+                </p:NodeReference>
+                <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+                <Patch Id="CTbGYjbZRarOMzIMF3r5Uj">
+                  <Node Bounds="670,284,46,26" AutoConnect="true" Id="IG8HWUvkBD7N6Ojjpq54Ct">
+                    <p:NodeReference LastCategoryFullName="ColorBlender.Blend" LastSymbolSource="ColorBlender.dll">
+                      <Choice Kind="OperationNode" Name="Create" />
+                      <FullNameCategoryReference ID="ColorBlender.Blend" />
+                    </p:NodeReference>
+                    <Pin Id="DGlZUhlNgOUPqUxKRvRmeB" Name="Output" Kind="StateOutputPin" />
+                  </Node>
+                  <Pin Id="CtpPtp2ehTgPcMTlGke4V7" Name="Output" Kind="OutputPin" />
+                </Patch>
+              </Node>
+            </Canvas>
+            <ProcessDefinition Id="OQ6nhbd0sxpM18Vq4nKuwe" IsHidden="true">
+              <Fragment Id="U57u8LK4w14Od5G7Pq4jGE" Patch="FUgmFg9rlMWOb3Xs8W1E0q" Enabled="true" />
+              <Fragment Id="EfCvSXc0AhCMyq4XgCdhje" Patch="JE4OTflqOlzN7dXhhG6vGm" />
+              <Fragment Id="KdMkx6T2MOzPIg12KM08gD" Patch="SbYPQv7KgsgPMZ9sxRFh5e" />
+            </ProcessDefinition>
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ ColorMatch ************************
+
+-->
+        <Node Name="ColorMatch" Bounds="422,470" Id="N58v36KHheQLdiVj7RkScM">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="ColorBlender" LastSymbolSource="ColorBlender.dll">
+            <Choice Kind="TypeFlag" Name="ColorMatch" />
+          </p:TypeAnnotation>
+          <Patch Id="IEOIHYqtE6tLdFjxGgKg1I">
+            <Canvas Id="Kf9A0ww58yCMiQcifaM130" CanvasType="Group" />
+            <ProcessDefinition Id="V0ivn7dR03EO4GOZLSJNKO" IsHidden="true" />
+          </Patch>
+        </Node>
+      </Canvas>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="RWZvrcVlkDQLB74j748bkr">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="A9uaFHSvEqILMLEXMoziEW">
+        <Canvas Id="CzY4EuhBJgjNphKPo7aDHc" CanvasType="Group" />
+        <Patch Id="Up0OtYcvj6gNSCIsYcZkEr" Name="Create" />
+        <Patch Id="I7AON5fGkgfNtd32TafkOU" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="OAprfJP70NSLIGr8R687LR">
+          <Fragment Id="MwjXqnQc8hdQNqHdu04bpK" Patch="Up0OtYcvj6gNSCIsYcZkEr" Enabled="true" />
+          <Fragment Id="OSMrTAzLMdALT4OgNAxqCB" Patch="I7AON5fGkgfNtd32TafkOU" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="DP3ty5S7aHJMiSvqmuebCq" Location="VL.Skia" Version="2019.2.0-0007-g1964dfe42f" />
+  <NugetDependency Id="Oz7MdPuGnv2OgeNLtXFpVi" Location="ColorBlender" Version="0.2.0" />
+</Document>
