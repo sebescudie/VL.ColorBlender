@@ -2,6 +2,8 @@
 
 VL implementation of the [https://github.com/wieslawsoltes/ColorBlender](ColorBlender) for VVVV Gamma
 
+![splash](https://raw.githubusercontent.com/superbien/VL.ColorBlender/master/source/splash.PNG "splash")
+
 ## Was ist das?
 
 ColorBlender is "a .NET library for color matching and palette design". It allows to generate harmonious color palettes from a single color input, and has the following algorithms :
