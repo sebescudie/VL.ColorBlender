@@ -10,7 +10,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>ColorBlender implementation for vvvv gamma</summary>
     <description>ColorBlender implementation for vvvv gamma</description>
-    <copyright>Copyright © 2019 by sebescudie. All rights reserved.</copyright>
+    <copyright>Copyright © 2020 by sebescudie. All rights reserved.</copyright>
     <tags>VL color palette</tags>
     <dependencies>
         <dependency id="ColorBlender" version="0.2.0"/>
