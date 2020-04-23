@@ -19,7 +19,7 @@ ColorBlender is "a .NET library for color matching and palette design". It allow
 
 ## Installation
 
-`nuget install VL.ColorBlender -pre`
+`nuget install VL.ColorBlender`
 
 ## Usage
 
