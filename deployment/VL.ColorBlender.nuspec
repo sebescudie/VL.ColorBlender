@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.ColorBlender</id>
+    <version>2.0.0</version>
+    <title>VL.ColorBlender</title>
+    <authors>wieslawsoltes, sebescudie</authors>
+    <owners>sebescudie</owners>
+    <projectUrl>https://github.com/superbien/VL.ColorBlender</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>ColorBlender implementation for vvvv gamma</summary>
+    <description>ColorBlender implementation for vvvv gamma</description>
+    <copyright>Copyright © 2020 by sebescudie. All rights reserved.</copyright>
+    <tags>VL color palette</tags>
+    <dependencies>
+        <dependency id="ColorBlender" version="0.2.0"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="*.vl" target="" exclude="" />
+    <file src="**\*.vl" target="" exclude="" />
+  </files>
+</package>
