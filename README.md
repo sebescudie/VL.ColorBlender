@@ -1,8 +1,10 @@
 # VL.ColorBlender
 
-VL implementation of the [ColorBlender](https://github.com/wieslawsoltes/ColorBlender) for VVVV Gamma
+[![Nuget](https://img.shields.io/nuget/v/VL.ColorBlender?style=flat-square)](https://www.nuget.org/packages/VL.ColorBlender)
 
-![splash](https://raw.githubusercontent.com/superbien/VL.ColorBlender/master/source/splash.PNG "splash")
+VL implementation of the [ColorBlender](https://github.com/wieslawsoltes/ColorBlender) lib for VVVV Gamma
+
+![splash](https://raw.githubusercontent.com/superbien/VL.ColorBlender/master/img/splash.PNG "splash")
 
 ## Was ist das?
 
@@ -19,7 +21,11 @@ ColorBlender is "a .NET library for color matching and palette design". It allow
 
 ## Installation
 
-`nuget install VL.ColorBlender -pre`
+Go to VL's command line and type
+
+```
+nuget install VL.ColorBlender
+```
 
 ## Usage
 
