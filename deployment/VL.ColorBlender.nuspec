@@ -18,8 +18,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="*.vl" target="" exclude="" />
-    <file src="**\*.vl" target="" exclude="" />
+    <file src="..\*.vl" target="" exclude="" />
+    <file src="..\**\*.vl" target="" exclude="" />
     <file src="icon.png" target=""/>
   </files>
 </package>
