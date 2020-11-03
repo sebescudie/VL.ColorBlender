@@ -1,5 +1,3 @@
-name: push_nuget
-
 # on push on master
 on:
   push:
@@ -18,8 +16,8 @@ jobs:
     - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v1
       
-    - name: Nuget Pack
-      run: nuget pack ./VL.ColorBlender.nuspec
-      
-    - name: Nuget Push
-      run: nuget push *.nupkg ${{ secrets.NUGET_KEY }} -src https://api.nuget.org/v3/index.json
+    - name: Publish VL Nuget
+      uses: vvvv/PublishVLNuget@1.0.29
+      with:
+        nuspec: deployment\VL.ColorBlender.nuspec
+        nuget-key: ${{ secrets.NUGET_KEY }}
