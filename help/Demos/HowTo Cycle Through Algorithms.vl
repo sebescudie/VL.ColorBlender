@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="DwDsTAeEjd1PoxzlJqqcFk" LanguageVersion="2019.2.0-0007-1964dfe42f" Version="0.128">
-  <NugetDependency Id="ORgOKwXVlKFNckrLEsRmKx" Location="VL.CoreLib" Version="2019.2.0-7" />
+<Document xmlns:p="property" Id="DwDsTAeEjd1PoxzlJqqcFk" LanguageVersion="2020.3.0.53" Version="0.128">
+  <NugetDependency Id="ORgOKwXVlKFNckrLEsRmKx" Location="VL.CoreLib" Version="2020.3.0-0053-gd338f20e7b" />
   <Patch Id="UjLJq1iZvw1NoBkB5YimpB">
     <Canvas Id="CcadVDHhIN0MEXFl7r01Dr" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -40,7 +40,7 @@
               <Pin Id="Iy7RGtBipFTNVnJUav3REM" Name="Output" Kind="OutputPin" />
             </Node>
             <Node Bounds="453,620,234,196" Id="URWw0bkmL3dPiobsSK4zj3">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="ForEach" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -162,6 +162,7 @@
               <Pin Id="H3pTwuuIXfNQYiHFYjkyw8" Name="Paint" Kind="InputPin" />
               <Pin Id="S6p0wXI2SIhPqr6fJ2GEFh" Name="Enabled" Kind="InputPin" />
               <Pin Id="VhVSacYEF5DQTYMsUtN5Xi" Name="Output" Kind="OutputPin" />
+              <Pin Id="ANPH5xM3WRqOujvAhBmH2n" Name="Baseline Position" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="SLqd82WTTvOPXqoMr7lOeT" Bounds="566,872" />
             <Node Bounds="584,899,165,19" Id="KJYS8XJpZKVObHHgVKOhkb">
@@ -293,20 +294,19 @@
                 <ControlPoint Id="AkVjzF5iUw6L1ZQeBr4lS2" Bounds="159,75" />
                 <Pin Id="M3GBsSgDoa5PwZDIuYB8fy" Name="Output" Kind="OutputPin" />
                 <ControlPoint Id="DN2O68C1F4vLiEIgA3zWkm" Bounds="159,134" />
-                <Node Bounds="157,86,44,26" Id="Gn7PFJiLoRnNOM4aMldXbB">
-                  <p:NodeReference LastCategoryFullName="Color.ColorBlender.Algorithms.Square" LastSymbolSource="VL.ColorBlender.vl">
+                <Node Bounds="157,93,47,19" Id="Nh4baacyANxLEhrAGieibp">
+                  <p:NodeReference LastCategoryFullName="Color.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="Category" Name="ColorBlender" />
-                    <CategoryReference Kind="Category" Name="Algorithms" />
-                    <CategoryReference Kind="RecordType" Name="Square" />
-                    <Choice Kind="OperationCallFlag" Name="Match" />
+                    <Choice Kind="OperationCallFlag" Name="Square" />
+                    <FullNameCategoryReference ID="Color.ColorBlender" />
+                    <PinReference Kind="OutputPin" Name="Result" />
                   </p:NodeReference>
-                  <Pin Id="JqkIQurcwGDLHknrh8tp0Z" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="SLuxJBo6hF2MMFVFmfyOHz" Name="Result" Kind="OutputPin" />
+                  <Pin Id="IXcz4oB7vT7OD96hZqsswh" Name="Input" Kind="InputPin" />
+                  <Pin Id="TajiXStHdToNbNpKWTfmWZ" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
             </Node>
-            <Node Bounds="318,57,79,92" Id="BtBWwTqsrLUPG1hMHzKVhd">
+            <Node Bounds="318,60,79,92" Id="BtBWwTqsrLUPG1hMHzKVhd">
               <p:NodeReference>
                 <Choice Kind="ApplicationRegion" Name="Delegate" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -317,18 +317,18 @@
                 <ControlPoint Id="DlfTtt0NagpMgDeKHBhVMB" Bounds="332,78" />
                 <Pin Id="CdEnvbFMkxHN8FRcO3ORSQ" Name="Output" Kind="OutputPin" />
                 <ControlPoint Id="Ssygvma1ZxGNiye7j6MrWT" Bounds="332,135" />
-                <Node Bounds="330,93,44,26" Id="JPGibG0CKYjPZ1naHW9Ehc">
-                  <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.Algorithms.Triadic" LastSymbolSource="VL.ColorBlender.vl">
+                <Node Bounds="330,99,47,19" Id="HAU6GiuCEZcLJfuitkjlWM">
+                  <p:NodeReference LastCategoryFullName="Color.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Match" />
-                    <CategoryReference Kind="ClassType" Name="Triadic" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="Triadic" />
+                    <PinReference Kind="OutputPin" Name="Result" />
                   </p:NodeReference>
-                  <Pin Id="FCvNma8gbNzQJDSu7j6KYS" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="EnE1suSTZK1PshlaUh7EMI" Name="Result" Kind="OutputPin" />
+                  <Pin Id="H4c7Ck85dNzPabkmr11AlY" Name="Input" Kind="InputPin" />
+                  <Pin Id="JfVrNlWa1TvLrZ0kpgPaI2" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
             </Node>
-            <Node Bounds="486,57,79,90" Id="SUpoZWrlKQ5Ljtv9BgjqAz">
+            <Node Bounds="486,72,86,90" Id="SUpoZWrlKQ5Ljtv9BgjqAz">
               <p:NodeReference>
                 <Choice Kind="ApplicationRegion" Name="Delegate" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -339,18 +339,18 @@
                 <ControlPoint Id="P2G93d6zyklNN22kDZfubZ" Bounds="500,90" />
                 <Pin Id="K3mOi1R0EYbOGzKFJ6xEh9" Name="Output" Kind="OutputPin" />
                 <ControlPoint Id="HnDrLgpzcCqLuIAmsuOEJx" Bounds="500,145" />
-                <Node Bounds="498,106,52,26" Id="LfrSBdjrPKoP0dKwNOJMUr">
-                  <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.Algorithms.SingleHue" LastSymbolSource="VL.ColorBlender.vl">
+                <Node Bounds="498,107,62,19" Id="BKaLYLCoufSLUTjklMLa1z">
+                  <p:NodeReference LastCategoryFullName="Color.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Match" />
-                    <CategoryReference Kind="RecordType" Name="SingleHue" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="SingleHue" />
+                    <PinReference Kind="OutputPin" Name="Result" />
                   </p:NodeReference>
-                  <Pin Id="QqjpKG0ZahoPDQEFacnUmj" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="T2jLEknD9cvPHXSXjJJaMg" Name="Result" Kind="OutputPin" />
+                  <Pin Id="GqrASUlYbaDMikLpNWLoxA" Name="Input" Kind="InputPin" />
+                  <Pin Id="RrzZtqNeKf7LQ6t0UVbpvj" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
             </Node>
-            <Node Bounds="637,57,90,93" Id="LoBqWlaLJITMwBpTMn1kYy">
+            <Node Bounds="637,73,103,93" Id="LoBqWlaLJITMwBpTMn1kYy">
               <p:NodeReference>
                 <Choice Kind="ApplicationRegion" Name="Delegate" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -361,18 +361,18 @@
                 <ControlPoint Id="IRu9SMMsv0XQZAPjee6t9R" Bounds="651,91" />
                 <Pin Id="O3oU2b6OxuUMf6WCrrYS9y" Name="Output" Kind="OutputPin" />
                 <ControlPoint Id="JFgWoDszJBaPPSTBf4tANh" Bounds="651,149" />
-                <Node Bounds="649,105,66,26" Id="VF1cTHgpp16PYvPRfGYLXa">
-                  <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.Algorithms.ColorExplorer" LastSymbolSource="VL.ColorBlender.vl">
+                <Node Bounds="649,111,79,19" Id="ToxSKRl7PqEM4qZ5zLsHfc">
+                  <p:NodeReference LastCategoryFullName="Color.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Match" />
-                    <CategoryReference Kind="RecordType" Name="ColorExplorer" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="ColorExplorer" />
+                    <PinReference Kind="OutputPin" Name="Result" />
                   </p:NodeReference>
-                  <Pin Id="RntiYRqUkHtL9J6mOTPGYF" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="L2TR6X9Tj3YP7DM3pvovac" Name="Result" Kind="OutputPin" />
+                  <Pin Id="O2u4DY1sEKXL4ZgbBn1DLa" Name="Input" Kind="InputPin" />
+                  <Pin Id="QYxJ2tPcKwTPiygjfAAeHn" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
             </Node>
-            <Node Bounds="796,57,97,98" Id="SPiKcDmPkE4PgcFwwVn9tr">
+            <Node Bounds="796,81,112,98" Id="SPiKcDmPkE4PgcFwwVn9tr">
               <p:NodeReference>
                 <Choice Kind="ApplicationRegion" Name="Delegate" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -383,18 +383,18 @@
                 <ControlPoint Id="QHix6gjF0J6OK42zZKLG6V" Bounds="810,99" />
                 <Pin Id="KLRfaZkkKAnQctmglGHkBy" Name="Output" Kind="OutputPin" />
                 <ControlPoint Id="OMdUv9Hqj7qPaJksgVoPMu" Bounds="810,162" />
-                <Node Bounds="808,117,73,26" Id="EnYsibXzfooMXL65p3zlky">
-                  <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.Algorithms.Complementary" LastSymbolSource="VL.ColorBlender.vl">
+                <Node Bounds="808,120,88,19" Id="Qexlkd5eGPVLPugfakqKYE">
+                  <p:NodeReference LastCategoryFullName="Color.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Match" />
-                    <CategoryReference Kind="RecordType" Name="Complementary" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="Complementary" />
+                    <PinReference Kind="OutputPin" Name="Result" />
                   </p:NodeReference>
-                  <Pin Id="CVgTayTnzb6NdNXZwSaNDC" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="HbnlR0uTshPNxOksYMZyVO" Name="Result" Kind="OutputPin" />
+                  <Pin Id="P3OWWDOP5w6NHwM9iLERfb" Name="Input" Kind="InputPin" />
+                  <Pin Id="UAoGuJL6AY1OBxOwX3lEpw" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
             </Node>
-            <Node Bounds="978,57,112,95" Id="NzQw64hwWHvQKEUMClnwCr">
+            <Node Bounds="978,80,132,95" Id="NzQw64hwWHvQKEUMClnwCr">
               <p:NodeReference>
                 <Choice Kind="ApplicationRegion" Name="Delegate" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -405,18 +405,18 @@
                 <ControlPoint Id="PsckHSDc10SN4QQb8d2GBE" Bounds="992,98" />
                 <Pin Id="CUd4GJff2dWPYZFAJehRiU" Name="Output" Kind="OutputPin" />
                 <ControlPoint Id="C14tskR5CQRN90Q0Kq9CQo" Bounds="992,158" />
-                <Node Bounds="990,115,88,26" Id="QjtW4WkazgRMqymA4vHCi2">
-                  <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.Algorithms.SplitComplementary" LastSymbolSource="VL.ColorBlender.vl">
+                <Node Bounds="990,119,108,19" Id="UlT5gSuG2rRLjVYg2keMRM">
+                  <p:NodeReference LastCategoryFullName="Color.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Match" />
-                    <CategoryReference Kind="RecordType" Name="SplitComplementary" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="SplitComplementary" />
+                    <PinReference Kind="OutputPin" Name="Result" />
                   </p:NodeReference>
-                  <Pin Id="MLYExLk5lWKMJ4tBywC3k6" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="M2TejaqHmTmL0Opo7wvzPD" Name="Result" Kind="OutputPin" />
+                  <Pin Id="BrqoTYApuheM2JEZXPtI5m" Name="Input" Kind="InputPin" />
+                  <Pin Id="UC8FpZ3xWvKMExYxczCB38" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
             </Node>
-            <Node Bounds="1165,57,79,93" Id="I5UG7aD3ENUNyaicGutoCu">
+            <Node Bounds="1165,89,79,93" Id="I5UG7aD3ENUNyaicGutoCu">
               <p:NodeReference>
                 <Choice Kind="ApplicationRegion" Name="Delegate" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -427,18 +427,18 @@
                 <ControlPoint Id="NJiO2ZrAGt7LRM5NPmSde4" Bounds="1179,107" />
                 <Pin Id="M9aNzuYP8PvO3McXxvnOXt" Name="Output" Kind="OutputPin" />
                 <ControlPoint Id="CfcG2xj2IiGQBSmKEyYpXp" Bounds="1179,165" />
-                <Node Bounds="1177,124,44,26" Id="QLOlHA4IAwiLc8mVJ2ADvH">
-                  <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.Algorithms.Classic" LastSymbolSource="VL.ColorBlender.vl">
+                <Node Bounds="1177,128,48,19" Id="VVHmQ7pQfVNLu2yJ6Nkj9l">
+                  <p:NodeReference LastCategoryFullName="Color.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Match" />
-                    <CategoryReference Kind="RecordType" Name="Classic" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="Classic" />
+                    <PinReference Kind="OutputPin" Name="Result" />
                   </p:NodeReference>
-                  <Pin Id="S3r1kyhyPV0OUhHFRve9jA" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="JJgOsws5xXAMy8ChvvZEqR" Name="Result" Kind="OutputPin" />
+                  <Pin Id="VjPdvezoMCkOAiMTSE6jEZ" Name="Input" Kind="InputPin" />
+                  <Pin Id="UFPv9S7WKjtPEf05CGZ1tk" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
             </Node>
-            <Node Bounds="1355,75,79,92" Id="H4eADqJCy3yO6wZu2iCLqR">
+            <Node Bounds="1355,75,83,92" Id="H4eADqJCy3yO6wZu2iCLqR">
               <p:NodeReference>
                 <Choice Kind="ApplicationRegion" Name="Delegate" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -449,14 +449,14 @@
                 <ControlPoint Id="ExftZth7BICPxbEItCuteD" Bounds="1369,93" />
                 <Pin Id="Q4DislE35WtLpSKKIWYzy4" Name="Output" Kind="OutputPin" />
                 <ControlPoint Id="E6aFh2V4WzGMeyM31bp67G" Bounds="1369,150" />
-                <Node Bounds="1367,109,50,26" Id="AT7ZisogvGeM56H57cuYMd">
-                  <p:NodeReference LastCategoryFullName="RGBA.ColorBlender.Algorithms.Analogue" LastSymbolSource="VL.ColorBlender.vl">
+                <Node Bounds="1367,110,59,19" Id="QEO4NZlO0GEOfOc4J79FRQ">
+                  <p:NodeReference LastCategoryFullName="Color.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="Match" />
-                    <CategoryReference Kind="RecordType" Name="Analogue" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="Analogue" />
+                    <PinReference Kind="OutputPin" Name="Result" />
                   </p:NodeReference>
-                  <Pin Id="UnVAAnxIButMYM4tAj7P3q" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="An7Mc9cvD8KLy1yrvWdbim" Name="Result" Kind="OutputPin" />
+                  <Pin Id="ADyZ1AoNeMULidxUJdt9Rf" Name="Input" Kind="InputPin" />
+                  <Pin Id="Oc4HRc17Ud2OZADdsyQmeq" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
             </Node>
@@ -565,11 +565,6 @@
             <Pin Id="Nt9f9SYcc8yLshiA461MYm" Name="Output" Kind="OutputPin" Bounds="247,454" />
             <Pin Id="Qh0ao0tK77ONSMzPP7AUqJ" Name="Selected Palette" Kind="OutputPin" Bounds="305,879" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="Or4e6srE8PeOVvucaBzT8b">
             <Fragment Id="PS4Gcld33QMQPtNXrg4nqE" Patch="RYvV7oZXorgPY5UHhDjA4r" Enabled="true" />
             <Fragment Id="KcFVjOkNiixPZReUyoebLt" Patch="AUuDjW0jUBWPpC4pK518r4" Enabled="true" />
@@ -582,43 +577,27 @@
           <Link Id="EfD93b6vsKjNXCAILwmNIG" Ids="K3szkq7FvX5NGEI5WPY0qe,VpirqhFG33XLT8qK1ocB9O" />
           <Link Id="L46EeBGLYasOcFx3N9lGoL" Ids="RjnNeH5YZIBNvAsr2Urms3,AkVjzF5iUw6L1ZQeBr4lS2" IsHidden="true" />
           <Link Id="MQ0YXh7MLZYLxC4MLs1JZ1" Ids="DN2O68C1F4vLiEIgA3zWkm,M3GBsSgDoa5PwZDIuYB8fy" IsHidden="true" />
-          <Link Id="DCWRv38TWrCPsKes7sf7wR" Ids="AkVjzF5iUw6L1ZQeBr4lS2,JqkIQurcwGDLHknrh8tp0Z" />
-          <Link Id="IWZWUqTj4S6OWO9AZ4yhSX" Ids="SLuxJBo6hF2MMFVFmfyOHz,DN2O68C1F4vLiEIgA3zWkm" />
           <Link Id="PvzfUgMb91XOiWifCsCtYH" Ids="B4ZM5YlowmEQF7FX6BcZm7,AoqDfWmTxNPL34hQqKxN3J" />
           <Link Id="U75wcFxrB2ROEv5XippUYi" Ids="IbyyltNqLpVOxVqXLzKQ48,DlfTtt0NagpMgDeKHBhVMB" IsHidden="true" />
           <Link Id="KnkGk7ivqiZN8eWNaz9ctk" Ids="Ssygvma1ZxGNiye7j6MrWT,CdEnvbFMkxHN8FRcO3ORSQ" IsHidden="true" />
-          <Link Id="LSHaEj4dweQODHoCjMuBVt" Ids="DlfTtt0NagpMgDeKHBhVMB,FCvNma8gbNzQJDSu7j6KYS" />
-          <Link Id="ECRJQouwwXPMGVaCwNQtaC" Ids="EnE1suSTZK1PshlaUh7EMI,Ssygvma1ZxGNiye7j6MrWT" />
           <Link Id="R9Lixtuc8j4N9hKQMMe8o0" Ids="R1CcdocvolxNInhyQ8pKKI,JZZvh7j5aZKPvWRK95BL6X" />
           <Link Id="Q0Wq9kkgQMaONcCjTm9J61" Ids="RK4mOXLlQktNnBz0UKunIR,P2G93d6zyklNN22kDZfubZ" IsHidden="true" />
           <Link Id="FKXo1LSMciCNQwFk6Zobms" Ids="HnDrLgpzcCqLuIAmsuOEJx,K3mOi1R0EYbOGzKFJ6xEh9" IsHidden="true" />
-          <Link Id="TV6gUiSfSRBOCDCrKg4D5n" Ids="P2G93d6zyklNN22kDZfubZ,QqjpKG0ZahoPDQEFacnUmj" />
-          <Link Id="URVAtsm0wZAQKoi3RqDKkC" Ids="T2jLEknD9cvPHXSXjJJaMg,HnDrLgpzcCqLuIAmsuOEJx" />
           <Link Id="UoZ71tcSLTuPd7bwjs6geH" Ids="IinSVwT9FfsLEdLWJfPlv4,FOozYhBTmkkNc28mMyeLLH" />
           <Link Id="KXVwgQn9e21PWOfUbbVW8H" Ids="OriwqNtb6OcMTiaXpqZsn2,IRu9SMMsv0XQZAPjee6t9R" IsHidden="true" />
           <Link Id="PyexO2g5qM5M0d57qd80X0" Ids="JFgWoDszJBaPPSTBf4tANh,O3oU2b6OxuUMf6WCrrYS9y" IsHidden="true" />
-          <Link Id="GRuMdaZSKhjMmeSDxHjF0J" Ids="IRu9SMMsv0XQZAPjee6t9R,RntiYRqUkHtL9J6mOTPGYF" />
-          <Link Id="CcCMEyPEyMCNRYC3zh9T8h" Ids="L2TR6X9Tj3YP7DM3pvovac,JFgWoDszJBaPPSTBf4tANh" />
           <Link Id="H0kWnjHL6QOMURNyrEuDQy" Ids="P5V6xdaHMlbLQOU44dSg4e,PdTxl5x1NEULEm1iXxyBUv" />
           <Link Id="QUv9dTqNt1eN2vC89YPq7M" Ids="TAOsmEf5v3XM7EYNJFKsFv,QHix6gjF0J6OK42zZKLG6V" IsHidden="true" />
           <Link Id="HNZbjlqdiFxOVeZMnPu5ww" Ids="OMdUv9Hqj7qPaJksgVoPMu,KLRfaZkkKAnQctmglGHkBy" IsHidden="true" />
-          <Link Id="VR7HbmR488EQKpYdYekpcM" Ids="QHix6gjF0J6OK42zZKLG6V,CVgTayTnzb6NdNXZwSaNDC" />
-          <Link Id="UQsOxrfYzSJPJ4BvLElCpb" Ids="HbnlR0uTshPNxOksYMZyVO,OMdUv9Hqj7qPaJksgVoPMu" />
           <Link Id="RjYiF7lNSE5ONYbA4dK8zz" Ids="Us55tcPmkXiP1RvwSyp8pK,BelcWTGjhSCLcEBf8PpGM9" />
           <Link Id="JOhXGdm4BygPErEvd5Dnok" Ids="E5mo1g6eh5CMB5ntowjAPe,PsckHSDc10SN4QQb8d2GBE" IsHidden="true" />
           <Link Id="VPBp9NMvqJILDKIt9DCTKm" Ids="C14tskR5CQRN90Q0Kq9CQo,CUd4GJff2dWPYZFAJehRiU" IsHidden="true" />
-          <Link Id="Rw3T0zfd03CM4Vm9BSWCsS" Ids="PsckHSDc10SN4QQb8d2GBE,MLYExLk5lWKMJ4tBywC3k6" />
-          <Link Id="MzR7Ot8JrTxNvZvB6SBhyY" Ids="M2TejaqHmTmL0Opo7wvzPD,C14tskR5CQRN90Q0Kq9CQo" />
           <Link Id="MTXL3Yeo7zjNyMi5qUppyp" Ids="CklBWKAjbqCL0BesbgaAZi,VrtgvjuI1F2Opxz6kanqEJ" />
           <Link Id="Mj7NTSVwE3QL29xgMReeUM" Ids="Uv6nmFVM2ZNMrTeIV8rUmg,NJiO2ZrAGt7LRM5NPmSde4" IsHidden="true" />
           <Link Id="MNNPftbcMj1Nn5pcuJrTmg" Ids="CfcG2xj2IiGQBSmKEyYpXp,M9aNzuYP8PvO3McXxvnOXt" IsHidden="true" />
-          <Link Id="J0AUK6S9ouLMiHIZ69sNot" Ids="NJiO2ZrAGt7LRM5NPmSde4,S3r1kyhyPV0OUhHFRve9jA" />
-          <Link Id="QKnnczlR0fIQK4bZzkMJsc" Ids="JJgOsws5xXAMy8ChvvZEqR,CfcG2xj2IiGQBSmKEyYpXp" />
           <Link Id="KTi5hlrcT58MCNkvqHnQO6" Ids="Cqm5CG5jHm5LynrRpUUdLn,AEbjF4WazROPd3GDJSiVm5" />
           <Link Id="MIts19CB3PTOOWxGyCkl7m" Ids="CTdGoebjZ6FLSaVbWBheYr,ExftZth7BICPxbEItCuteD" IsHidden="true" />
           <Link Id="CWKpuSfheuIMM11fNj8Hbi" Ids="E6aFh2V4WzGMeyM31bp67G,Q4DislE35WtLpSKKIWYzy4" IsHidden="true" />
-          <Link Id="MpPXtXkVG8qOIYc2IIr5p2" Ids="ExftZth7BICPxbEItCuteD,UnVAAnxIButMYM4tAj7P3q" />
-          <Link Id="NqgNEQsSYyWOkcv0bJbQCR" Ids="An7Mc9cvD8KLy1yrvWdbim,E6aFh2V4WzGMeyM31bp67G" />
           <Link Id="HjSyptk7OY1QR5b6jf9Z0D" Ids="LjmAx0kkONELH2DsmdsOtM,PuNSLUBTVZqQRqhWWYa7h1" />
           <Link Id="IFcjpdRPOaGLqTygJT9Nn2" Ids="PuNSLUBTVZqQRqhWWYa7h1,Nt9f9SYcc8yLshiA461MYm" IsHidden="true" />
           <Link Id="VuASgWm4BemLwW3QXccs0E" Ids="SK6hYEOmyP0LpOP1Y94NQt,BVgmovr5yeyNY0iFDnR8Ii" />
@@ -629,6 +608,22 @@
           <Link Id="IYeZmIRcgCiME31k51yVqX" Ids="C5ZDAORlDv2QC8TlhVEufz,KiUDDPDkRXBPBXuC0R7NPe" />
           <Link Id="BY8CrbBA75WNZGFjbcBoig" Ids="GqPvvoqgkgRNJ6cfFVuGrl,RfsATrb8q3XQZemX4uTgQC" />
           <Link Id="CsPCYBhdasuOci2zmQPBMM" Ids="RfsATrb8q3XQZemX4uTgQC,Qh0ao0tK77ONSMzPP7AUqJ" IsHidden="true" />
+          <Link Id="C1vsFvuwErTLIWRF0gypSV" Ids="AkVjzF5iUw6L1ZQeBr4lS2,IXcz4oB7vT7OD96hZqsswh" />
+          <Link Id="UxnIWYhdttMMqoanFcE7YS" Ids="TajiXStHdToNbNpKWTfmWZ,DN2O68C1F4vLiEIgA3zWkm" />
+          <Link Id="D8OkTgRGlxzLBOacJ1tGqW" Ids="DlfTtt0NagpMgDeKHBhVMB,H4c7Ck85dNzPabkmr11AlY" />
+          <Link Id="A507XwQODvOLOWTMOj9r02" Ids="JfVrNlWa1TvLrZ0kpgPaI2,Ssygvma1ZxGNiye7j6MrWT" />
+          <Link Id="TtcebfbTzjIMdVZwwz5p2g" Ids="P2G93d6zyklNN22kDZfubZ,GqrASUlYbaDMikLpNWLoxA" />
+          <Link Id="NXpNyTAixtNPhlW2PBf6JL" Ids="RrzZtqNeKf7LQ6t0UVbpvj,HnDrLgpzcCqLuIAmsuOEJx" />
+          <Link Id="GxqrHfPCzJPPw36PQvSxTe" Ids="IRu9SMMsv0XQZAPjee6t9R,O2u4DY1sEKXL4ZgbBn1DLa" />
+          <Link Id="GCStaZK95LkNptyFKDXSDG" Ids="QYxJ2tPcKwTPiygjfAAeHn,JFgWoDszJBaPPSTBf4tANh" />
+          <Link Id="T7eXHBAKY2FQJggajpkC8I" Ids="QHix6gjF0J6OK42zZKLG6V,P3OWWDOP5w6NHwM9iLERfb" />
+          <Link Id="Ch4L67KIKdSMcxiZ9cEvRv" Ids="UAoGuJL6AY1OBxOwX3lEpw,OMdUv9Hqj7qPaJksgVoPMu" />
+          <Link Id="BBNRRr2nWSIMic4ChsDywc" Ids="PsckHSDc10SN4QQb8d2GBE,BrqoTYApuheM2JEZXPtI5m" />
+          <Link Id="LBpVofOCkiRNYiFRcXLZH0" Ids="UC8FpZ3xWvKMExYxczCB38,C14tskR5CQRN90Q0Kq9CQo" />
+          <Link Id="Ndh0Gg30H9dOHpUfjue59r" Ids="NJiO2ZrAGt7LRM5NPmSde4,VjPdvezoMCkOAiMTSE6jEZ" />
+          <Link Id="EUbfg14VAfUMTG2PyRJwr0" Ids="UFPv9S7WKjtPEf05CGZ1tk,CfcG2xj2IiGQBSmKEyYpXp" />
+          <Link Id="Crx1wUUuNiKPFukMdlWPsk" Ids="ExftZth7BICPxbEItCuteD,ADyZ1AoNeMULidxUJdt9Rf" />
+          <Link Id="QFQgZXMEe1BPiyEgzBr3hu" Ids="Oc4HRc17Ud2OZADdsyQmeq,E6aFh2V4WzGMeyM31bp67G" />
         </Patch>
       </Node>
     </Canvas>
@@ -645,7 +640,7 @@
       <Patch Id="FxS8T85BbpnMin7WMkmlzP">
         <Canvas Id="MWxqHfqZMBmOX1JsNW2hZU" CanvasType="Group">
           <Node Bounds="302,210,70,19" Id="R2NvKfurKWmPsnvkjfLfVt">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Compute harmonious colors.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Cycle Through Algorithms.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawPalette" />
             </p:NodeReference>
@@ -653,7 +648,7 @@
             <Pin Id="T8PXIKB7AT6MGCF4xjPx7E" Name="Selected Algo" Kind="InputPin" />
             <Pin Id="E3grDxJ4FZ4PBSlHnNmFZq" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="235,298,145,19" Id="EaLZbehxA6sMGfXbI88E3D">
+          <Node Bounds="215,306,165,19" Id="EaLZbehxA6sMGfXbI88E3D">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
@@ -661,6 +656,11 @@
             <Pin Id="QpO1B0slGBUMBWtFMcaVg7" Name="Bounds" Kind="InputPin" DefaultValue="1178, 286, 394, 400">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Nh9AEMes9aJPOx4CuJZpYr" Name="Bound to Document" Kind="InputPin" DefaultValue="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="NZ1ZK83h67oMQdpMTwJ0CC" Name="Input" Kind="InputPin" />
@@ -675,7 +675,7 @@
             <Pin Id="BKTgXkO8QcAQZvqpq1Xvnu" Name="Render Time" Kind="OutputPin" />
           </Node>
           <Node Bounds="255,169,99,19" Id="KvvW8oCYiJqP12CTIRdmmA">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Compute harmonious colors.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="HowTo Cycle Through Algorithms.vl">
               <Choice Kind="ProcessNode" Name="AlgorithmSelector" />
             </p:NodeReference>
             <Pin Id="LIaQw6PCOaoOXbc1aeahvN" Name="Arg" Kind="InputPin" DefaultValue="0, 0.8899999, 0.4627997, 1">
@@ -687,7 +687,7 @@
             <Pin Id="VpJTP73xwLPOhYRM6nUGIm" Name="Result" Kind="OutputPin" />
             <Pin Id="LbbjYzEtVIFP68Gno4MwcM" Name="Selected Palette" Kind="OutputPin" />
           </Node>
-          <Pad Id="AnIZZ6LGjXqPLFMsnL0mjs" Comment="Arg" Bounds="257,139,136,15" ShowValueBox="true" isIOBox="true" Value="0, 1, 0.8799994, 1">
+          <Pad Id="AnIZZ6LGjXqPLFMsnL0mjs" Comment="Arg" Bounds="257,139,136,15" ShowValueBox="true" isIOBox="true" Value="1, 0, 0.1800027, 1">
             <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="RGBA" />
             </p:TypeAnnotation>
@@ -726,6 +726,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="DqaN8mk6GIUPswbntaAxRP" Location="VL.Skia" Version="2019.2.0-0007-g1964dfe42f" />
+  <NugetDependency Id="DqaN8mk6GIUPswbntaAxRP" Location="VL.Skia" Version="2020.3.0-0053-gd338f20e7b" />
   <DocumentDependency Id="JRzwm7Yg5HRLmMnKV29PWf" Location="../../VL.ColorBlender.vl" />
 </Document>

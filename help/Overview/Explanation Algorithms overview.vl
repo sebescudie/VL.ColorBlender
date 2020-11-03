@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="CrvbVlE0YI1MFSyJihDcOg" LanguageVersion="2020.3.0.53" Version="0.128">
+  <NugetDependency Id="MZQDlCFlNJ2Om12TcDZvrJ" Location="VL.CoreLib" Version="2020.3.0-0053-gd338f20e7b" />
+  <Patch Id="GlskTkIcmomMCKuyDfmoCW">
+    <Canvas Id="V6lMNFuBVzcOvxPc0WgmZ5" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Hhs7ZWGKTxQL6gd4ZHc5F2">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="TD63s4L8hKKPPU29crZfy5">
+        <Canvas Id="SPXsBTUzFCwP0BW5yiEZJs" CanvasType="Group">
+          <Pad Id="A8BI85rnfSaNUPin5QwXAm" Comment="" Bounds="196,513,35,111" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">6</p:maxvisibleentries>
+              <p:showvalue p:Type="Boolean">false</p:showvalue>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="K8lOsg74XYvPupctrCOdG5" Comment="" Bounds="271,513,35,111" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">6</p:maxvisibleentries>
+              <p:showvalue p:Type="Boolean">false</p:showvalue>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RboHZWDaMG8LmVB9DDSR6y" Comment="" Bounds="364,513,35,111" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">6</p:maxvisibleentries>
+              <p:showvalue p:Type="Boolean">false</p:showvalue>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MKo4HbnBZAZLJHObEOttce" Comment="" Bounds="472,513,35,111" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">6</p:maxvisibleentries>
+              <p:showvalue p:Type="Boolean">false</p:showvalue>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NlZH18nLxuEPopb6jYRRtg" Comment="" Bounds="552,513,35,111" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">6</p:maxvisibleentries>
+              <p:showvalue p:Type="Boolean">false</p:showvalue>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="V0wEIGZDAa9PVDA430btSR" Comment="" Bounds="677,513,35,111" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">6</p:maxvisibleentries>
+              <p:showvalue p:Type="Boolean">false</p:showvalue>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CG4oeuCpNa0QZWuGjsAfuV" Comment="" Bounds="743,513,35,111" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">6</p:maxvisibleentries>
+              <p:showvalue p:Type="Boolean">false</p:showvalue>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BxYC14cZAY4LqDTsonBFYC" Comment="" Bounds="123,513,35,111" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:maxvisibleentries p:Type="Int32">6</p:maxvisibleentries>
+              <p:showvalue p:Type="Boolean">false</p:showvalue>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Im80xSIVbMdQYoKTDmSan9" Comment="Change me" Bounds="364,362,102,50" ShowValueBox="true" isIOBox="true" Value="0.1287, 0.99, 0.9899976, 1">
+            <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="RGBA" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="122,445,59,19" Id="VTjq0RRI1DFL85vHfIgTnP">
+            <p:NodeReference LastCategoryFullName="Color.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Color" />
+              <CategoryReference Kind="Category" Name="ColorBlender" />
+              <Choice Kind="ProcessAppFlag" Name="Analogue" />
+            </p:NodeReference>
+            <Pin Id="L0ReSiA9MsULGKgTMLk7fC" Name="Input" Kind="InputPin" />
+            <Pin Id="Q3YH9sCzUhxNvWv2l9ERGA" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="194,445,48,19" Id="BusNsJzEhaOLBTBoNw6j6W">
+            <p:NodeReference LastCategoryFullName="Color.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Color" />
+              <CategoryReference Kind="Category" Name="ColorBlender" />
+              <Choice Kind="ProcessAppFlag" Name="Classic" />
+            </p:NodeReference>
+            <Pin Id="TOhaXRyof7DPUGT3alUn11" Name="Input" Kind="InputPin" />
+            <Pin Id="OpOSHKo0oV3LpOrxWaDPTi" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="269,445,79,19" Id="BaBbTHHhQVjOBOUTjbiB7y">
+            <p:NodeReference LastCategoryFullName="Color.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="ColorBlender" />
+              <Choice Kind="ProcessAppFlag" Name="ColorExplorer" />
+            </p:NodeReference>
+            <Pin Id="KLporXwIUNzPwXWXbY823V" Name="Input" Kind="InputPin" />
+            <Pin Id="RoWBEycbwSLMZQR4lkzYgo" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="362,445,88,19" Id="IY3Uuvkm0PfMzTirVb4xtx">
+            <p:NodeReference LastCategoryFullName="Color.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="ColorBlender" />
+              <Choice Kind="ProcessAppFlag" Name="Complementary" />
+            </p:NodeReference>
+            <Pin Id="OLoI7vXEoOVPMfXyY1Ktoj" Name="Input" Kind="InputPin" />
+            <Pin Id="JDNk8yhQ22KPKUqxRfLizp" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="470,445,62,19" Id="EeToekpay40NTZbIE2G8Vq">
+            <p:NodeReference LastCategoryFullName="Color.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="ColorBlender" />
+              <Choice Kind="ProcessAppFlag" Name="SingleHue" />
+            </p:NodeReference>
+            <Pin Id="VMsql9vQsGPPenwsUfqewQ" Name="Input" Kind="InputPin" />
+            <Pin Id="H8Nk9c5u1ncLwmveN6zYxP" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="550,445,108,19" Id="D55DjKPepwIMbMdZYhufZs">
+            <p:NodeReference LastCategoryFullName="Color.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="ColorBlender" />
+              <Choice Kind="ProcessAppFlag" Name="SplitComplementary" />
+            </p:NodeReference>
+            <Pin Id="QU1KNFL9sROPOrepw3S6Bu" Name="Input" Kind="InputPin" />
+            <Pin Id="N9yzsWwJshlOT5jlKLpIOm" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="675,445,47,19" Id="FCGgX5m9Q9qN7KmcPEmw6a">
+            <p:NodeReference LastCategoryFullName="Color.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="ColorBlender" />
+              <Choice Kind="ProcessAppFlag" Name="Square" />
+            </p:NodeReference>
+            <Pin Id="CTNnN3IwoDSPV4GE53E4CU" Name="Input" Kind="InputPin" />
+            <Pin Id="LfhOuCOw1gPPEEOoSDFsH1" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="741,445,47,19" Id="Ts0rCRfx1EtLWmva0xt6MO">
+            <p:NodeReference LastCategoryFullName="Color.ColorBlender" LastSymbolSource="VL.ColorBlender.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="ColorBlender" />
+              <Choice Kind="ProcessAppFlag" Name="Triadic" />
+            </p:NodeReference>
+            <Pin Id="IDSLHR26YdrLUIJFzIZlwl" Name="Input" Kind="InputPin" />
+            <Pin Id="Fj1TVbslCumNXjCpGypnIV" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="362,316,65,19" Id="N5wtu5ypTVpLs0qbxnzeRO">
+            <p:NodeReference LastCategoryFullName="Color.RGBA" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="FromHSL" />
+            </p:NodeReference>
+            <Pin Id="LjKGS9kjTpLPVWCBvBzQSF" Name="Hue" Kind="InputPin" />
+            <Pin Id="RxHBjbLWRdjPt3pOKw7IPR" Name="Saturation" Kind="InputPin" />
+            <Pin Id="AbFMRw2nKsPNzobrKOZyHd" Name="Lightness" Kind="InputPin" />
+            <Pin Id="J5zQ2c0KOp3OlIduI877wc" Name="Alpha" Kind="InputPin" />
+            <Pin Id="SjXCA6nZMn7PwDTIONO2f3" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="362,265,45,19" Id="Fl5NNYqnnrfNyydQCBrajF">
+            <p:NodeReference LastCategoryFullName="Animation" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="LFO" />
+            </p:NodeReference>
+            <Pin Id="MfkcHimKZiQOnr9SySNaTy" Name="Period" Kind="InputPin" DefaultValue="5">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Float32" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="PzUpOEhs2iDPi6eKv5XICd" Name="Pause" Kind="InputPin" DefaultValue="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Ttxr5QcchuEMZxgdhfVDh4" Name="Reset" Kind="ApplyPin" />
+            <Pin Id="LAhy30P0B0ZLWEh6x2Hcf7" Name="Phase" Kind="OutputPin" />
+            <Pin Id="KTiqX2qRu3rP61kYACjxUB" Name="On New Cycle" Kind="OutputPin" />
+            <Pin Id="Q0HjCMXbzFpOcgeIGqZUzJ" Name="Cycles" Kind="OutputPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="UjKXqVJmhQqPtTRhCDifSj" Name="Create" />
+        <Patch Id="DKAo75jrP39Pp1VzBuwAuP" Name="Update" />
+        <ProcessDefinition Id="KTlHWbEDfQhOO0NHDy12P6">
+          <Fragment Id="LXgphtOfY1CL4IiLRLuQSb" Patch="UjKXqVJmhQqPtTRhCDifSj" Enabled="true" />
+          <Fragment Id="Nn6npq2msUNPpCbrqwvX2b" Patch="DKAo75jrP39Pp1VzBuwAuP" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="HYUtQ6kZUh6LRmFxZLkWZQ" Ids="Im80xSIVbMdQYoKTDmSan9,L0ReSiA9MsULGKgTMLk7fC" />
+        <Link Id="O9zUi0BS7YOOuE8JCafGBW" Ids="Q3YH9sCzUhxNvWv2l9ERGA,BxYC14cZAY4LqDTsonBFYC" />
+        <Link Id="JTS8PfauiPHOh5OcAITTSU" Ids="Im80xSIVbMdQYoKTDmSan9,TOhaXRyof7DPUGT3alUn11" />
+        <Link Id="BgE042PiDAVMnqAPQSgiJ4" Ids="OpOSHKo0oV3LpOrxWaDPTi,A8BI85rnfSaNUPin5QwXAm" />
+        <Link Id="VGWSE1YXqCCO51dcPSYB3n" Ids="Im80xSIVbMdQYoKTDmSan9,KLporXwIUNzPwXWXbY823V" />
+        <Link Id="NvJ494D8Oi9LG2p7PDR3DG" Ids="RoWBEycbwSLMZQR4lkzYgo,K8lOsg74XYvPupctrCOdG5" />
+        <Link Id="OQuifF1LK96QOyctpTg4d7" Ids="Im80xSIVbMdQYoKTDmSan9,OLoI7vXEoOVPMfXyY1Ktoj" />
+        <Link Id="H4md2K6dgeEP3W7qT8owML" Ids="JDNk8yhQ22KPKUqxRfLizp,RboHZWDaMG8LmVB9DDSR6y" />
+        <Link Id="REUHB6fJEZDPUM8V56rgFX" Ids="Im80xSIVbMdQYoKTDmSan9,VMsql9vQsGPPenwsUfqewQ" />
+        <Link Id="HaikYl2lupFNU2l0fBWG6H" Ids="Im80xSIVbMdQYoKTDmSan9,QU1KNFL9sROPOrepw3S6Bu" />
+        <Link Id="K3RG7YUkVAWPEN9U62MlfO" Ids="Im80xSIVbMdQYoKTDmSan9,CTNnN3IwoDSPV4GE53E4CU" />
+        <Link Id="GwZ7Fdj5oEuOc9quCU3fmp" Ids="Im80xSIVbMdQYoKTDmSan9,IDSLHR26YdrLUIJFzIZlwl" />
+        <Link Id="S7Gxqy8bzT6NznIy4yjQmE" Ids="H8Nk9c5u1ncLwmveN6zYxP,MKo4HbnBZAZLJHObEOttce" />
+        <Link Id="AwP2a0ECdv7QMwwxNDlv6Y" Ids="N9yzsWwJshlOT5jlKLpIOm,NlZH18nLxuEPopb6jYRRtg" />
+        <Link Id="TqEl1m7ow6SLsvGeeWHKzx" Ids="LfhOuCOw1gPPEEOoSDFsH1,V0wEIGZDAa9PVDA430btSR" />
+        <Link Id="UyfLNbos1UfLoAGjGlLjbW" Ids="Fj1TVbslCumNXjCpGypnIV,CG4oeuCpNa0QZWuGjsAfuV" />
+        <Link Id="JmgJpkiaJCcPb0eh3F1EmU" Ids="SjXCA6nZMn7PwDTIONO2f3,Im80xSIVbMdQYoKTDmSan9" />
+        <Link Id="OHnXTobgTALMHg03lWSfQn" Ids="LAhy30P0B0ZLWEh6x2Hcf7,LjKGS9kjTpLPVWCBvBzQSF" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="I8Qrb1inzIEMIaDLqyhhnp" Location="VL.Skia" Version="2020.3.0-0053-gd338f20e7b" />
+  <DocumentDependency Id="Pi3L3SfJhEfNv77JLV6DHc" Location="../../VL.ColorBlender.vl" />
+</Document>
