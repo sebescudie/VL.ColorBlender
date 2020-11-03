@@ -4,6 +4,7 @@
     <id>VL.ColorBlender</id>
     <version>2.0.0</version>
     <title>VL.ColorBlender</title>
+    <icon>icon.png</icon>
     <authors>wieslawsoltes, sebescudie</authors>
     <owners>sebescudie</owners>
     <projectUrl>https://github.com/superbien/VL.ColorBlender</projectUrl>
@@ -19,5 +20,6 @@
   <files>
     <file src="*.vl" target="" exclude="" />
     <file src="**\*.vl" target="" exclude="" />
+    <file src="icon.png" target=""/>
   </files>
 </package>
